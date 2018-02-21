@@ -1,0 +1,346 @@
+fileFormatVersion: 2
+guid: 748f54017c83acf4d8572db6df5bd3c3
+timeCreated: 1519246399
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: elf1_0
+    21300002: elf1_1
+    21300004: elf1_2
+    21300006: elf1_3
+    21300008: elf1_4
+    21300010: elf1_5
+    21300012: elf1_6
+    21300014: elf1_7
+    21300016: elf1_8
+    21300018: elf1_9
+    21300020: elf1_10
+    21300022: elf1_11
+    21300024: elf1_12
+    21300026: elf1_13
+    21300028: elf1_14
+    21300030: elf1_15
+    21300032: elf1_16
+    21300034: elf1_17
+    21300036: elf1_18
+    21300038: elf1_19
+    21300040: elf1_20
+    21300042: elf1_21
+    21300044: elf1_22
+    21300046: elf1_23
+    21300048: elf1_24
+    21300050: elf1_25
+    21300052: elf1_26
+    21300054: elf1_27
+    21300056: elf1_28
+    21300058: elf1_29
+    21300060: elf1_30
+    21300062: elf1_31
+    21300064: elf1_32
+    21300066: elf1_33
+    21300068: elf1_34
+    21300070: elf1_35
+    21300072: elf1_36
+    21300074: elf1_37
+    21300076: elf1_38
+    21300078: elf1_39
+    21300080: elf1_40
+    21300082: elf1_41
+    21300084: elf1_42
+    21300086: elf1_43
+    21300088: elf1_44
+    21300090: elf1_45
+    21300092: elf1_46
+    21300094: elf1_47
+    21300096: elf1_48
+    21300098: elf1_49
+    21300100: elf1_50
+    21300102: elf1_51
+    21300104: elf1_52
+    21300106: elf1_53
+    21300108: elf1_54
+    21300110: elf1_55
+    21300112: elf1_56
+    21300114: elf1_57
+    21300116: elf1_58
+    21300118: elf1_59
+    21300120: elf1_60
+    21300122: elf1_61
+    21300124: elf1_62
+    21300126: elf1_63
+    21300128: elf1_64
+    21300130: elf1_65
+    21300132: elf1_66
+    21300134: elf1_67
+    21300136: elf1_68
+    21300138: elf1_69
+    21300140: elf1_70
+    21300142: elf1_71
+    21300144: elf1_72
+    21300146: elf1_73
+    21300148: elf1_74
+    21300150: elf1_75
+    21300152: elf1_76
+    21300154: elf1_77
+    21300156: elf1_78
+    21300158: elf1_79
+    21300160: elf1_80
+    21300162: elf1_81
+    21300164: elf1_82
+    21300166: elf1_83
+    21300168: elf1_84
+    21300170: elf1_85
+    21300172: elf1_86
+    21300174: elf1_87
+    21300176: elf1_88
+    21300178: elf1_89
+    21300180: elf1_90
+    21300182: elf1_91
+    21300184: elf1_92
+    21300186: elf1_93
+    21300188: elf1_94
+    21300190: elf1_95
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 16
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 512
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: elf1_6
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 252
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elf1_7
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 252
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elf1_8
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 252
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elf1_18
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 216
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elf1_19
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 216
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elf1_20
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 216
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elf1_30
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 180
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elf1_31
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 180
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elf1_32
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 180
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elf1_42
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 144
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elf1_43
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 144
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elf1_44
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 144
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
