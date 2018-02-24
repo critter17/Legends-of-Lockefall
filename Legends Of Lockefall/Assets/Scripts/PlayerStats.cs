@@ -3,12 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerStats : MonoBehaviour {
-
-    public int maxHealth;
-    public int currentHealth;
+public class PlayerStats : BaseCharacterStats {
     public Slider healthBar;
-    
+
 	void Start ()
     {
         currentHealth = maxHealth;
