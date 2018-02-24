@@ -3,11 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerStats : MonoBehaviour {
-
-    public int maxHealth = 3;
-    public int currentHealth;
-
+public class PlayerStats : BaseCharacterStats {
     public Transform heartParent;
     Image[] hearts;
     public GameObject heartPrefab;
