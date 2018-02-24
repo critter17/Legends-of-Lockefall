@@ -20,8 +20,8 @@ public class PlayerController : MonoBehaviour {
 	void Update ()
     {
         moving = false;
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
+        float horizontal = Mathf.RoundToInt(Input.GetAxisRaw("Horizontal"));
+        float vertical = Mathf.RoundToInt(Input.GetAxisRaw("Vertical"));
 
         if (canMove)
         {
