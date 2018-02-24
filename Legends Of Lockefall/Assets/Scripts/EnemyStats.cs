@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class EnemyStats : BaseCharacterStats {
-    public Slider healthBar;
 
     public float damageBoostTime;
     public bool damageBoosting = false;
@@ -16,8 +15,10 @@ public class EnemyStats : BaseCharacterStats {
 	
 	void Update ()
     {
-        healthBar.maxValue = maxHealth;
-        healthBar.value = currentHealth;
+        if(currentHealth <= 0)
+        {
+            Destroy(this.gameObject);
+        }
 	}
 
     public void TakeDamage(int damage)

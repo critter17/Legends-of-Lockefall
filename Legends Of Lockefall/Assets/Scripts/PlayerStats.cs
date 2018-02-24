@@ -54,6 +54,7 @@ public class PlayerStats : BaseCharacterStats {
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        onHeartsChangedCallback();
     }
 
     void UpdateHearts()
@@ -70,6 +71,14 @@ public class PlayerStats : BaseCharacterStats {
             {
                 hearts[i].sprite = emptyHeart;
             }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Enemy")
+        {
+            TakeDamage(collision.GetComponentInParent<EnemyStats>().baseAttack);
         }
     }
 }
