@@ -587,6 +587,12 @@ MonoBehaviour:
   - There should be some just north of us.
   questGameObject: {fileID: 558095835}
   questType: LizardmanSlayer
+  waitingDialogue:
+  - Have you done what I asked?
+  completionDialogue:
+  - You did it! Here's your reward!
+  finishedDialogue:
+  - Thanks for doing that thing for me bro!
 --- !u!61 &523301446
 BoxCollider2D:
   m_ObjectHideFlags: 0

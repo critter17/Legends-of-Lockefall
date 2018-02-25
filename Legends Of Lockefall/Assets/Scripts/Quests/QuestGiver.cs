@@ -12,6 +12,10 @@ public class QuestGiver : NPCInteraction {
     public string questType;
     private Quest Quest { get; set; }
 
+    public string[] waitingDialogue;
+    public string[] completionDialogue;
+    public string[] finishedDialogue;
+
     public override void Interact()
     {
         if(!AssignedQuest && !Helped)
@@ -20,12 +24,12 @@ public class QuestGiver : NPCInteraction {
             AssignQuest();
         }else if(AssignedQuest && !Helped)
         {
-            TextBoxManager.instance.AddNewDialogue(new string[] { "Have you done what I asked?" }, NPCName);
+            TextBoxManager.instance.AddNewDialogue(waitingDialogue, NPCName);
             CheckQuest();
         }
         else if(AssignedQuest && Helped)
         {
-            TextBoxManager.instance.AddNewDialogue(new string[] { "Thanks for doing that thing for me bro." }, NPCName);
+            TextBoxManager.instance.AddNewDialogue(finishedDialogue, NPCName);
         }
     }
 
@@ -39,7 +43,7 @@ public class QuestGiver : NPCInteraction {
     {
         if (Quest.Completed)
         {
-            TextBoxManager.instance.AddNewDialogue(new string[] { "You did it! Thanks bro!" }, NPCName);
+            TextBoxManager.instance.AddNewDialogue(completionDialogue, NPCName);
             Quest.GiveReward();
             Helped = true;
             RemoveQuest();
