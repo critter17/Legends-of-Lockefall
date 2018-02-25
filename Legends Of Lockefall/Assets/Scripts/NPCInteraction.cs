@@ -25,7 +25,7 @@ public class NPCInteraction : MonoBehaviour {
         }
 	}
 
-    public void Interact()
+    public virtual void Interact()
     {
         TextBoxManager.instance.textFile = dialogue;
         TextBoxManager.instance.speakerName = NPCName;

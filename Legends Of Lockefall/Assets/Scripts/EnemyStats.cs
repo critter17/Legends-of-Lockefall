@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class EnemyStats : BaseCharacterStats {
 
+    public string EnemyName;
+
     public float damageBoostTime;
     public bool damageBoosting = false;
 
@@ -17,7 +19,7 @@ public class EnemyStats : BaseCharacterStats {
     {
         if(currentHealth <= 0)
         {
-            Destroy(this.gameObject);
+            Die();
         }
 	}
 
@@ -28,6 +30,12 @@ public class EnemyStats : BaseCharacterStats {
             currentHealth -= damage;
             StartCoroutine(DamageBoost());
         }
+    }
+
+    public void Die()
+    {
+        PlayerManager.instance.OnEnemyKilledCallback.Invoke(EnemyName);
+        Destroy(this.gameObject);
     }
 
     IEnumerator DamageBoost()

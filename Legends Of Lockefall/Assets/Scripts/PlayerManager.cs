@@ -10,10 +10,30 @@ public class PlayerManager : MonoBehaviour {
 
     private void Awake()
     {
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Debug.LogWarning("More than one instance of PlayerManager detected");
+        }
     }
 
     #endregion
 
     public GameObject player;
+
+    public delegate void OnEnemyKilled(string EnemyName); // I'm just putting it here because I can.
+    public OnEnemyKilled OnEnemyKilledCallback;
+
+    private void Start()
+    {
+        OnEnemyKilledCallback += filler;
+    }
+
+    void filler(string filler)
+    {
+        //this is only here to make sure OnEnemyKilledCombat stays active.
+    }
 }
