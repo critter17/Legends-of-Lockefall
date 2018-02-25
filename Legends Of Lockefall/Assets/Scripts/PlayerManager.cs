@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour {
 
@@ -23,6 +24,8 @@ public class PlayerManager : MonoBehaviour {
     #endregion
 
     public GameObject player;
+    public Text currencyText;
+    public int totalCurrency;
 
     public delegate void OnEnemyKilled(string EnemyName); // I'm just putting it here because I can.
     public OnEnemyKilled OnEnemyKilledCallback;
@@ -30,6 +33,11 @@ public class PlayerManager : MonoBehaviour {
     private void Start()
     {
         OnEnemyKilledCallback += filler;
+    }
+
+    private void Update()
+    {
+        currencyText.text = totalCurrency.ToString();
     }
 
     void filler(string filler)
