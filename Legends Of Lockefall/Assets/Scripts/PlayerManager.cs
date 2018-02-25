@@ -27,20 +27,30 @@ public class PlayerManager : MonoBehaviour {
     public Text currencyText;
     public int totalCurrency;
 
+    public List<Interactable> interactablesInRange = new List<Interactable>();
+
     public delegate void OnEnemyKilled(string EnemyName); // I'm just putting it here because I can.
     public OnEnemyKilled OnEnemyKilledCallback;
 
     private void Start()
     {
-        OnEnemyKilledCallback += filler;
+        OnEnemyKilledCallback += Filler;
     }
 
     private void Update()
     {
         currencyText.text = totalCurrency.ToString();
+
+        if(Input.GetButtonDown("Fire2"))
+        {
+            if(interactablesInRange[0] != null)
+            {
+                interactablesInRange[0].Interact();
+            }
+        }
     }
 
-    void filler(string filler)
+    void Filler(string filler)
     {
         //this is only here to make sure OnEnemyKilledCombat stays active.
     }

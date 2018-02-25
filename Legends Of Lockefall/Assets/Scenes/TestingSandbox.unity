@@ -263,6 +263,16 @@ Prefab:
       propertyPath: m_SpriteTilingProperty.newSize.y
       value: 0.18
       objectReference: {fileID: 0}
+    - target: {fileID: 114890159134613810, guid: 8641b60821b26bc4da67b6f0f91de3a1,
+        type: 2}
+      propertyPath: interactionRadius
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114890159134613810, guid: 8641b60821b26bc4da67b6f0f91de3a1,
+        type: 2}
+      propertyPath: destroyOnInteract
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8641b60821b26bc4da67b6f0f91de3a1, type: 2}
   m_IsPrefabParent: 0
@@ -568,9 +578,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fca884e52d7f8d041a624bdee08a6ab6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionRadius: 3
+  destroyOnInteract: 0
   dialogue: {fileID: 4900000, guid: 400753639c5a5a847aca6e9bbfc6f7ef, type: 3}
   NPCName: Dude
-  interactionRadius: 3
   questGameObject: {fileID: 558095835}
   questType: LizardmanSlayer
 --- !u!61 &523301446
@@ -999,6 +1010,16 @@ Prefab:
       propertyPath: m_EdgeRadius
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114287160016276520, guid: d8eb19621cb97ba49bc9c1e8e89268e4,
+        type: 2}
+      propertyPath: interactionRadius
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114287160016276520, guid: d8eb19621cb97ba49bc9c1e8e89268e4,
+        type: 2}
+      propertyPath: destroyOnInteract
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d8eb19621cb97ba49bc9c1e8e89268e4, type: 2}
   m_IsPrefabParent: 0
@@ -1371,6 +1392,16 @@ Prefab:
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 114294794618845370, guid: f9d793aa57aa0764a8d3e3b0b0846fc8,
+        type: 2}
+      propertyPath: interactionRadius
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114294794618845370, guid: f9d793aa57aa0764a8d3e3b0b0846fc8,
+        type: 2}
+      propertyPath: destroyOnInteract
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9d793aa57aa0764a8d3e3b0b0846fc8, type: 2}
   m_IsPrefabParent: 0
@@ -1432,6 +1463,16 @@ Prefab:
     - target: {fileID: 212346167584486206, guid: 29dec7a3e6e2e6e4cb29ec316c307b73,
         type: 2}
       propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114103063685233778, guid: 29dec7a3e6e2e6e4cb29ec316c307b73,
+        type: 2}
+      propertyPath: interactionRadius
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114103063685233778, guid: 29dec7a3e6e2e6e4cb29ec316c307b73,
+        type: 2}
+      propertyPath: destroyOnInteract
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2432,6 +2473,16 @@ Prefab:
         type: 2}
       propertyPath: m_Size.y
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114078341754240344, guid: 3685b5e2410f11c49aa9308235064444,
+        type: 2}
+      propertyPath: interactionRadius
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114078341754240344, guid: 3685b5e2410f11c49aa9308235064444,
+        type: 2}
+      propertyPath: destroyOnInteract
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3685b5e2410f11c49aa9308235064444, type: 2}

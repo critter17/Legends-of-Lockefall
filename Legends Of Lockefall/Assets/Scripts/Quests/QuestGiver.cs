@@ -40,6 +40,12 @@ public class QuestGiver : NPCInteraction {
         {
             Quest.GiveReward();
             Helped = true;
+            RemoveQuest();
         }
+    }
+
+    void RemoveQuest()
+    {
+        Destroy(questGameObject.GetComponent<Quest>());
     }
 }
