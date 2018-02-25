@@ -9,7 +9,7 @@ public class LizardmanSlayer : Quest {
         QuestName = "Lizardman Slayer";
         Description = "Kill 2 Lizardmen";
 
-        Goals.Add(new KillGoal(this, "Lizardman", "Kill 5 Lizardmen", false, 0, 2));
+        Goals.Add(new KillGoal(this, "Lizardman", "Kill 2 Lizardmen", false, 0, 2));
 
         Goals.ForEach(g => g.Init());
 	}

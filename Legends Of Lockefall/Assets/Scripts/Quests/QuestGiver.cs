@@ -37,6 +37,7 @@ public class QuestGiver : NPCInteraction {
     {
         AssignedQuest = true;
         Quest = (Quest)questGameObject.AddComponent(System.Type.GetType(questType));
+        QuestManager.instance.UpdateAllQuests();
     }
 
     void CheckQuest()
@@ -53,5 +54,6 @@ public class QuestGiver : NPCInteraction {
     void RemoveQuest()
     {
         Destroy(questGameObject.GetComponent<Quest>());
+        QuestManager.instance.UpdateAllQuests();
     }
 }

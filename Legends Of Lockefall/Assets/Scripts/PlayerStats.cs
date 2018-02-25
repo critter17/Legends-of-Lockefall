@@ -24,23 +24,6 @@ public class PlayerStats : BaseCharacterStats {
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         maxHealth = Mathf.Clamp(maxHealth, 3, 19);
 
-        if(Input.GetKeyDown(KeyCode.T))
-        {
-            TakeDamage(1);
-            onHeartsChangedCallback();
-        }
-
-        if (Input.GetKeyDown(KeyCode.U))
-        {
-            TakeDamage(-1);
-            onHeartsChangedCallback();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Y))
-        {
-            maxHealth++;
-        }
-
         if (hearts.Length < maxHealth)
         {
             GameObject newHeart;

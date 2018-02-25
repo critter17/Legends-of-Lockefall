@@ -14,7 +14,6 @@ public class Quest : MonoBehaviour {
 
     public void CheckGoals()
     {
-        //Completed = Goals.All(g => g.Completed);
         if(completedGoals == Goals.Count)
         {
             Completed = true;

@@ -82,6 +82,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  currencyText: {fileID: 0}
+  totalCurrency: 0
+  interactablesInRange: []
 --- !u!114 &114516403681808598
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -93,11 +96,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 678e5a128a5d79c488025c0174961dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textBox: {fileID: 0}
-  text: {fileID: 0}
+  dialogueLines: []
   speakerName: 
-  speakerNameText: {fileID: 0}
-  textFile: {fileID: 0}
-  textLines: []
-  currentLine: 0
-  endAtLine: 0
+  dialoguePanel: {fileID: 0}
+  continueButton: {fileID: 0}
+  dialogueText: {fileID: 0}
+  nameText: {fileID: 0}

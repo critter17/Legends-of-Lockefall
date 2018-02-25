@@ -41,11 +41,14 @@ public class PlayerManager : MonoBehaviour {
     {
         currencyText.text = totalCurrency.ToString();
 
-        if(Input.GetButtonDown("Fire2"))
+        if (interactablesInRange.Count != 0)
         {
-            if(interactablesInRange[0] != null)
+            if (Input.GetButtonDown("Fire2"))
             {
-                interactablesInRange[0].Interact();
+                if (interactablesInRange[0] != null)
+                {
+                    interactablesInRange[0].Interact();
+                }
             }
         }
     }
