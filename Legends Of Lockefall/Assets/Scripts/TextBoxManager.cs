@@ -16,63 +16,49 @@ public class TextBoxManager : MonoBehaviour {
 
     #endregion
 
-    public GameObject textBox;
-
-    public Text text;
-
+    public List<string> dialogueLines = new List<string>();
     public string speakerName;
-    public Text speakerNameText;
 
-    public TextAsset textFile;
-    public string[] textLines;
+    public GameObject dialoguePanel;
+    public Button continueButton;
+    public Text dialogueText;
+    public Text nameText;
 
-    public int currentLine;
-    public int endAtLine;
-	
-	void Update ()
+    int dialogueIndex;
+
+    private void Start()
     {
-        if(textFile != null)
-        {
-            OpenTextBox();
-            text.text = textLines[currentLine];
-            speakerNameText.text = speakerName;
-        }
+        continueButton.onClick.AddListener(delegate { ContinueDialogue(); });
+        dialoguePanel.GetComponent<Animator>().SetBool("Opened", false);
     }
 
-    public void NextLine()
+    public void AddNewDialogue(string[] lines, string npcName)
     {
-        if (currentLine < endAtLine)
+        dialogueIndex = 0;
+        dialogueLines = new List<string>(lines.Length);
+        dialogueLines.AddRange(lines);
+        speakerName = npcName;
+
+        CreateDialogue();
+    }
+
+    public void CreateDialogue()
+    {
+        dialogueText.text = dialogueLines[dialogueIndex];
+        nameText.text = speakerName;
+        dialoguePanel.GetComponent<Animator>().SetBool("Opened", true);
+    }
+
+    public void ContinueDialogue()
+    {
+        if(dialogueIndex < dialogueLines.Count - 1)
         {
-            currentLine += 1;
+            dialogueIndex++;
+            dialogueText.text = dialogueLines[dialogueIndex];
         }
         else
         {
-            CloseTextBox();
+            dialoguePanel.GetComponent<Animator>().SetBool("Opened", false);
         }
-    }
-
-    public void CloseTextBox()
-    {
-        textBox.GetComponent<Animator>().SetBool("Opened", false);
-        PlayerManager.instance.player.GetComponent<PlayerController>().CanMove(true);
-        textFile = null;
-        speakerName = "";
-        currentLine = 0;
-    }
-
-    public void OpenTextBox()
-    {
-        textBox.GetComponent<Animator>().SetBool("Opened", true);
-        PlayerManager.instance.player.GetComponent<PlayerController>().CanMove(false);
-        UpdateTextBox();
-    }
-
-    public void UpdateTextBox()
-    {
-        if (textFile != null)
-        {
-            textLines = (textFile.text.Split('\n'));
-        }
-        endAtLine = textLines.Length - 1;
     }
 }

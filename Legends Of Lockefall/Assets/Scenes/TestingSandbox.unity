@@ -580,8 +580,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionRadius: 3
   destroyOnInteract: 0
-  dialogue: {fileID: 4900000, guid: 400753639c5a5a847aca6e9bbfc6f7ef, type: 3}
   NPCName: Dude
+  dialogue:
+  - Hey bro can you do me a solid?
+  - Kill some Lizardmen for me. 2 should do the trick.
+  - There should be some just north of us.
   questGameObject: {fileID: 558095835}
   questType: LizardmanSlayer
 --- !u!61 &523301446
@@ -1405,6 +1408,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9d793aa57aa0764a8d3e3b0b0846fc8, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1235391563 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114551125488291186, guid: 7c173b438be08574fa082b560b91e976,
+    type: 2}
+  m_PrefabInternal: {fileID: 565048827}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1258403020
 Prefab:
   m_ObjectHideFlags: 0
@@ -2097,6 +2106,26 @@ Prefab:
       propertyPath: currencyText
       value: 
       objectReference: {fileID: 1592772471}
+    - target: {fileID: 114516403681808598, guid: 49e96d4becfd02b40a1be0312eec33fd,
+        type: 2}
+      propertyPath: dialoguePanel
+      value: 
+      objectReference: {fileID: 1649406208}
+    - target: {fileID: 114516403681808598, guid: 49e96d4becfd02b40a1be0312eec33fd,
+        type: 2}
+      propertyPath: continueButton
+      value: 
+      objectReference: {fileID: 1235391563}
+    - target: {fileID: 114516403681808598, guid: 49e96d4becfd02b40a1be0312eec33fd,
+        type: 2}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 1936176227}
+    - target: {fileID: 114516403681808598, guid: 49e96d4becfd02b40a1be0312eec33fd,
+        type: 2}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 1711326085}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49e96d4becfd02b40a1be0312eec33fd, type: 2}
   m_IsPrefabParent: 0
