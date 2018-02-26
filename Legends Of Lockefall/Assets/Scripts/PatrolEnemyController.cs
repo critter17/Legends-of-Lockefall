@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PatrolEnemyController : MonoBehaviour {
 
-    Animator anim;
+    [HideInInspector]
+    public Animator anim;
     public float radius;
 
     public Waypoint[] waypoints;
@@ -14,7 +15,8 @@ public class PatrolEnemyController : MonoBehaviour {
     public bool moving;
     float delay;
 
-    float horizontal, vertical;
+    [HideInInspector]
+    public float horizontal, vertical;
     
 	void Start ()
     {
@@ -28,8 +30,7 @@ public class PatrolEnemyController : MonoBehaviour {
         float distance = Vector2.Distance(transform.position, PlayerManager.instance.player.transform.position);
         if(distance <= radius)
         {
-            transform.position = Vector2.MoveTowards(transform.position, PlayerManager.instance.player.transform.position, moveSpeed * Time.deltaTime);
-            DetectDirection(PlayerManager.instance.player.transform);
+            ChaseAndAttack();
         }
         else
         {
@@ -40,6 +41,11 @@ public class PatrolEnemyController : MonoBehaviour {
         anim.SetFloat("Horizontal", -horizontal);
         anim.SetFloat("Vertical", -vertical);
         anim.SetBool("Moving", moving);
+    }
+
+    public virtual void ChaseAndAttack()
+    {
+
     }
 
     public void PatrolWaypoints()
@@ -73,7 +79,7 @@ public class PatrolEnemyController : MonoBehaviour {
         DetectDirection(waypoints[currentWaypoint].transform);
     }
 
-    void DetectDirection(Transform target)
+    public void DetectDirection(Transform target)
     {
         horizontal = transform.position.x - target.position.x;
         vertical = transform.position.y - target.position.y;
