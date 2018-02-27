@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-    Animator anim;
+    private Animator anim;
+    private Rigidbody2D playerRigidBody;
 
     public float moveSpeed;
     public bool moving;
@@ -14,6 +15,7 @@ public class PlayerController : MonoBehaviour {
 	void Start ()
     {
         anim = GetComponent<Animator>();
+        playerRigidBody = GetComponent<Rigidbody2D>();
         lastMove = new Vector2(0, -1);
 	}
 
@@ -27,18 +29,33 @@ public class PlayerController : MonoBehaviour {
         {
             if (horizontal != 0)
             {
-                transform.Translate(new Vector3(horizontal * moveSpeed * Time.deltaTime, 0f, 0f));
+                //transform.Translate(new Vector3(horizontal * moveSpeed * Time.deltaTime, 0f, 0f));
+                playerRigidBody.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, playerRigidBody.velocity.y);
                 moving = true;
                 lastMove = new Vector2(horizontal, 0f);
             }
 
             if (vertical != 0)
             {
-                transform.Translate(new Vector3(0f, vertical * moveSpeed * Time.deltaTime, 0f));
+                //transform.Translate(new Vector3(0f, vertical * moveSpeed * Time.deltaTime, 0f));
+                playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x, Input.GetAxisRaw("Vertical") * moveSpeed);
                 moving = true;
                 lastMove = new Vector2(0f, vertical);
             }
         }
+
+        if(horizontal == 0)
+        {
+            playerRigidBody.velocity = new Vector2(0f, playerRigidBody.velocity.y);
+        }
+
+        if(vertical == 0)
+        {
+            playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x, 0f);
+        }
+
+
+
 
         anim.SetFloat("Vertical", vertical);
         anim.SetFloat("Horizontal", horizontal);

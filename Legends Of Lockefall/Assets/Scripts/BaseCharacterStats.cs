@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-enum ElementType { Normal, Fire, Ice, Water, Wind, Shock, Earth, Toxic, Magic, Blast, Monster, Ghoul, Deity, Chi, Morph };
+public enum ElementType { Normal, Fire, Ice, Water, Wind, Shock, Earth, Toxic, Magic, Blast, Monster, Ghoul, Deity, Chi, Morph };
 
 public class BaseCharacterStats : MonoBehaviour {
 

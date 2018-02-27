@@ -44,12 +44,4 @@ public class EnemyStats : BaseCharacterStats {
         yield return new WaitForSeconds(damageBoostTime);
         damageBoosting = false;
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.tag == "Weapon")
-        {
-            TakeDamage(collision.GetComponentInParent<PlayerCombat>().baseDamage);
-        }
-    }
 }

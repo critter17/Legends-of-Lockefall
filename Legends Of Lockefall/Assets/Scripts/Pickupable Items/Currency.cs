@@ -2,15 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Currency : Interactable {
+public class Currency : PickupableObject {
 
     public int currencyAmount;
 
-    public override void Interact()
+    public override void Pickup()
     {
-        base.Interact();
         PlayerManager.instance.totalCurrency += currencyAmount;
         Debug.Log(PlayerManager.instance.totalCurrency);
         Destroy(this.gameObject);
+        Kill();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.name == "Player")
+        {
+            Pickup();
+        }
+
     }
 }

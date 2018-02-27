@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerStats : BaseCharacterStats {
+
+    public int[] numWeaponUses;
     public Transform heartParent;
     Image[] hearts;
     public GameObject heartPrefab;
@@ -54,14 +56,6 @@ public class PlayerStats : BaseCharacterStats {
             {
                 hearts[i].sprite = emptyHeart;
             }
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Enemy")
-        {
-            TakeDamage(collision.GetComponentInParent<EnemyStats>().baseAttack);
         }
     }
 }
