@@ -11,7 +11,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: Pixel Dojo Studios
   productName: Legends Of Lockefall
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -638,7 +638,7 @@ PlayerSettings:
   cloudServicesEnabled:
     UNet: 1
   facebookSdkVersion: 7.9.4
-  apiCompatibilityLevel: 2
+  apiCompatibilityLevel: 3
   cloudProjectId: 696fdd63-e0c8-45c3-a37c-3ea069d3263c
   projectName: Legends Of Lockefall
   organizationId: goldfish7000

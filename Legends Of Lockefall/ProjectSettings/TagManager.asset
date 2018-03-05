@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Pickupable Item
   - AttackHitbox
+  - Interactable
   layers:
   - Default
   - TransparentFX
@@ -18,8 +19,8 @@ TagManager:
   - 
   - 
   - Enemies
-  - 
-  - 
+  - Interactables
+  - Attacks
   - 
   - 
   - 

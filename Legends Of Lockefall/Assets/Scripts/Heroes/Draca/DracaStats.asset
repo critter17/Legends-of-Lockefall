@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36dfff748c54a2443880d9c581caf52d, type: 3}
+  m_Name: DracaStats
+  m_EditorClassIdentifier: 
+  name: Draca Brimstone
+  sprite: {fileID: 0}
+  maxHealth: 6
+  currentHealth: 6
+  baseStrength: 5
+  baseDefense: 5
+  baseSpeed: 3
+  weaponSlotAmount: 3
+  characterElementType: 01000000
+  normalResistance: 1
+  fireResistance: 3
+  iceResistance: 4
+  waterResistance: 1
+  windResistance: 2
+  shockResistance: 3
+  earthResistance: 1
+  toxicResistance: 3
+  magicResistance: 2
+  blastResistance: 4
+  monsterResistance: 4
+  ghoulResistance: 2
+  chiResistance: 1
+  numWeaponUses: 
