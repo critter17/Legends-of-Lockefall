@@ -5,11 +5,12 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
     private HeroStatManager hero;
     private Animator anim;
-    private Rigidbody2D playerRigidBody;
+    [HideInInspector] public Rigidbody2D playerRigidBody;
 
     public bool moving;
     public Vector2 lastMove;
     public bool canMove = true;
+    private int speed;
 
 	void Start ()
     {
@@ -17,9 +18,10 @@ public class PlayerController : MonoBehaviour {
         anim = GetComponent<Animator>();
         playerRigidBody = GetComponent<Rigidbody2D>();
         lastMove = new Vector2(0, -1);
+        speed = hero.heroStats.baseSpeed;
 	}
 
-	void Update ()
+	void FixedUpdate ()
     {
         moving = false;
         float horizontal = Mathf.RoundToInt(Input.GetAxisRaw("Horizontal"));
@@ -27,29 +29,26 @@ public class PlayerController : MonoBehaviour {
 
         if (canMove)
         {
-            if (horizontal > 0.5f || horizontal < -0.5f)
+            if(horizontal != 0 && vertical != 0)
             {
-                playerRigidBody.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * hero.heroStats.baseSpeed, playerRigidBody.velocity.y);
+                playerRigidBody.MovePosition(new Vector2(transform.position.x + (horizontal * speed), transform.position.y + (vertical * speed)));
+                moving = true;
+                lastMove = new Vector2(horizontal, vertical);
+            }
+
+            else if (horizontal != 0)
+            {
+                playerRigidBody.MovePosition(new Vector2(transform.position.x + (horizontal * speed), transform.position.y));
                 moving = true;
                 lastMove = new Vector2(horizontal, 0f);
             }
 
-            if (vertical > 0.5f || vertical < -0.5f)
+            else if (vertical != 0)
             {
-                playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x, Input.GetAxisRaw("Vertical") * hero.heroStats.baseSpeed);
+                playerRigidBody.MovePosition(new Vector2(transform.position.x, transform.position.y + (vertical * speed)));
                 moving = true;
                 lastMove = new Vector2(0f, vertical);
             }
-        }
-
-        if(horizontal < 0.5f && horizontal > -0.5f)
-        {
-            playerRigidBody.velocity = new Vector2(0f, playerRigidBody.velocity.y);
-        }
-
-        if(vertical < 0.5f && vertical > -0.5f)
-        {
-            playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x, 0f);
         }
 
         anim.SetFloat("Vertical", vertical);
@@ -57,6 +56,7 @@ public class PlayerController : MonoBehaviour {
         anim.SetFloat("LastMoveVertical", lastMove.y);
         anim.SetFloat("LastMoveHorizontal", lastMove.x);
         anim.SetBool("Moving", moving);
+
     }
 
     public void CanMove(bool state)

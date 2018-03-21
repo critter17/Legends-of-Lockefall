@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 114797162438557640}
   - component: {fileID: 114409162241341806}
   - component: {fileID: 61478023938715860}
+  - component: {fileID: 114031863108557310}
   m_Layer: 0
   m_Name: Draca Brimstone
   m_TagString: Player
@@ -171,7 +172,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.625, y: 2.25}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1.625, y: 2.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -197,6 +198,24 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114031863108557310
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1747069131411220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d2ed81fca1ac3749a83e9e78e6d17fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pixelPerfectCamera: {fileID: 0}
+  fitType: 0
+  parallaxLayer: 0
+  pixelScale: 1
+  runContinously: 0
+  useParentTransform: 0
+  displayGrid: 0
 --- !u!114 &114204741360310322
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -208,6 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58f91bbeab8d88a4aacb87e970a8b17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerRigidBody: {fileID: 0}
   moving: 0
   lastMove: {x: 0, y: 0}
   canMove: 1
@@ -224,8 +244,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartParent: {fileID: 0}
   heartPrefab: {fileID: 0}
-  fullHeart: {fileID: 21300002, guid: 55f70b392d1cfab4389814be4d9dbbaf, type: 3}
-  emptyHeart: {fileID: 21300004, guid: 55f70b392d1cfab4389814be4d9dbbaf, type: 3}
+  fullHeart: {fileID: 21300000, guid: e8838ee3a4eed884b95e29d22d75f125, type: 3}
+  emptyHeart: {fileID: 21300002, guid: e8838ee3a4eed884b95e29d22d75f125, type: 3}
 --- !u!114 &114409162241341806
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -261,7 +281,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc1d64e79c668c64ca5e0d2639525e6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentWeapon: {fileID: 0}
   hitbox: {fileID: 0}
+  weaponAnimator: {fileID: 0}
 --- !u!114 &114555351964552380
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -319,15 +341,15 @@ SpriteRenderer:
   m_SortingLayerID: 106956599
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 55f70b392d1cfab4389814be4d9dbbaf, type: 3}
+  m_Sprite: {fileID: 21300200, guid: 55f70b392d1cfab4389814be4d9dbbaf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 32, y: 32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!212 &212772123646320650
 SpriteRenderer:
@@ -363,7 +385,7 @@ SpriteRenderer:
   m_SortingLayerID: 106956599
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300014, guid: 748f54017c83acf4d8572db6df5bd3c3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8bb8bd09670beb7438f9bbb79481e530, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

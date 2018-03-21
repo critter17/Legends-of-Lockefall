@@ -2,16 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Gem", menuName = "Item/Currency")]
-public class Currency : Item
-{
-    public int currencyAmount;
-    /*
-    public override void Pickup()
+[CreateAssetMenu(fileName = "New Jewel", menuName = "Items/Currency")]
+public class Currency : Item {
+    public int currencyAmount = 0;
+
+    public override void ItemAction(GameObject player)
     {
         PlayerManager.instance.totalCurrency += currencyAmount;
-        Debug.Log(PlayerManager.instance.totalCurrency);
-        Destroy(this.gameObject);
     }
-    */
 }

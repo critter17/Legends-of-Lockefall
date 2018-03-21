@@ -9,19 +9,5 @@ public class BaseCharacterStats : ScriptableObject {
     public int baseStrength;
     public int baseDefense;
     public int baseSpeed;
-    public ElementType[] characterElementType;
-
-    public int normalResistance;
-    public int fireResistance;
-    public int iceResistance;
-    public int waterResistance;
-    public int windResistance;
-    public int shockResistance;
-    public int earthResistance;
-    public int toxicResistance;
-    public int magicResistance;
-    public int blastResistance;
-    public int monsterResistance;
-    public int ghoulResistance;
-    public int chiResistance;
+    public ElementType[] characterElementTypes;
 }

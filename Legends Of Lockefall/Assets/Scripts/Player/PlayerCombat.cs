@@ -23,9 +23,10 @@ public class PlayerCombat : MonoBehaviour {
     {
 		if(playerController.canMove == true)
         {
-            if(Input.GetButtonDown("Fire1"))
+            if(Input.GetButtonDown("Fire1") && weaponController.currentWeapon != null)
             {
                 StartCoroutine(Attack());
+                weaponController.UseWeapon();
             }
         }
 	}
@@ -35,9 +36,11 @@ public class PlayerCombat : MonoBehaviour {
         anim.SetBool("Attack", true);
         playerController.CanMove(false);
         weaponController.hitbox.enabled = true;
+        Debug.Log("Movement off: " + playerController.playerRigidBody.velocity);
         yield return new WaitForSeconds(attackSpeed);
         anim.SetBool("Attack", false);
         playerController.CanMove(true);
         weaponController.hitbox.enabled = false;
+        Debug.Log("Movement on: " + playerController.playerRigidBody.velocity);
     }
 }

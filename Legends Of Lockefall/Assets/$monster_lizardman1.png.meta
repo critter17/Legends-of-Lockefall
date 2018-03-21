@@ -58,7 +58,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -82,7 +82,7 @@ TextureImporter:
     maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,10 +95,10 @@ TextureImporter:
       name: $monster_lizardman1_0
       rect:
         serializedVersion: 2
-        x: 18
+        x: 0
         y: 300
-        width: 54
-        height: 74
+        width: 94
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -109,10 +109,10 @@ TextureImporter:
       name: $monster_lizardman1_1
       rect:
         serializedVersion: 2
-        x: 110
+        x: 94
         y: 300
-        width: 58
-        height: 76
+        width: 94
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,10 +123,10 @@ TextureImporter:
       name: $monster_lizardman1_2
       rect:
         serializedVersion: 2
-        x: 206
+        x: 188
         y: 300
-        width: 54
-        height: 74
+        width: 94
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,10 +137,10 @@ TextureImporter:
       name: $monster_lizardman1_3
       rect:
         serializedVersion: 2
-        x: 22
+        x: 0
         y: 200
-        width: 46
-        height: 74
+        width: 94
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,10 +151,10 @@ TextureImporter:
       name: $monster_lizardman1_4
       rect:
         serializedVersion: 2
-        x: 116
+        x: 94
         y: 200
-        width: 46
-        height: 76
+        width: 94
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,10 +165,10 @@ TextureImporter:
       name: $monster_lizardman1_5
       rect:
         serializedVersion: 2
-        x: 210
+        x: 188
         y: 200
-        width: 48
-        height: 74
+        width: 94
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,10 +179,10 @@ TextureImporter:
       name: $monster_lizardman1_6
       rect:
         serializedVersion: 2
-        x: 20
+        x: 0
         y: 100
-        width: 48
-        height: 74
+        width: 94
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,10 +193,10 @@ TextureImporter:
       name: $monster_lizardman1_7
       rect:
         serializedVersion: 2
-        x: 116
+        x: 94
         y: 100
-        width: 46
-        height: 76
+        width: 94
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,10 +207,10 @@ TextureImporter:
       name: $monster_lizardman1_8
       rect:
         serializedVersion: 2
-        x: 210
+        x: 188
         y: 100
-        width: 46
-        height: 74
+        width: 94
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,10 +221,10 @@ TextureImporter:
       name: $monster_lizardman1_9
       rect:
         serializedVersion: 2
-        x: 18
+        x: 0
         y: 0
-        width: 54
-        height: 74
+        width: 94
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,10 +235,10 @@ TextureImporter:
       name: $monster_lizardman1_10
       rect:
         serializedVersion: 2
-        x: 110
+        x: 94
         y: 0
-        width: 58
-        height: 76
+        width: 94
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,10 +249,10 @@ TextureImporter:
       name: $monster_lizardman1_11
       rect:
         serializedVersion: 2
-        x: 206
+        x: 188
         y: 0
-        width: 54
-        height: 74
+        width: 94
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

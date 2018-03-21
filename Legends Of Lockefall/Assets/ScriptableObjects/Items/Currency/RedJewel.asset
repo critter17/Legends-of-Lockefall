@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00641cc74c7bc914c99b5532f50b2cda, type: 3}
+  m_Name: RedJewel
+  m_EditorClassIdentifier: 
+  itemName: Red Jewel
+  itemSprite: {fileID: 21300578, guid: e8838ee3a4eed884b95e29d22d75f125, type: 3}
+  isDefaultItem: 0
+  currencyAmount: 10

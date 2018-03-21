@@ -11,7 +11,6 @@ public class PlayerHealthManager : MonoBehaviour {
     public GameObject heartPrefab;
     public Sprite fullHeart, emptyHeart;
     InitializeHearts initHearts;
-    Heart heart;
 
     public delegate void OnHeartsChanged();
     public OnHeartsChanged onHeartsChangedCallback;
@@ -42,6 +41,12 @@ public class PlayerHealthManager : MonoBehaviour {
     public void TakeDamage(int damage)
     {
         hero.heroStats.currentHealth -= damage;
+        onHeartsChangedCallback();
+    }
+
+    public void Heal(int amountToHeal)
+    {
+        hero.heroStats.currentHealth += amountToHeal;
         onHeartsChangedCallback();
     }
 

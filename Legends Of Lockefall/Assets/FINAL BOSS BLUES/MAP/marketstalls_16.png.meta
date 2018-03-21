@@ -3,7 +3,311 @@ guid: 0bbc330798fdd6d4ea0ec077de6f66e0
 timeCreated: 1519245585
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: marketstalls_white_roof
+    21300002: marketstalls_stripes_orange
+    21300004: marketstalls_16_2
+    21300006: marketstalls_16_3
+    21300008: marketstalls_reg
+    21300010: marketstalls_16_5
+    21300012: marketstalls_stripes_blue
+    21300014: marketstalls_stripes_green
+    21300016: marketstalls_red_roof
+    21300018: marketstalls_blue_roof
+    21300020: marketstalls_green_roof
+    21300022: marketstalls_yellow_roof
+    21300024: marketstalls_single
+    21300026: marketstalls_pole
+    21300028: marketstalls_end_left
+    21300030: marketstalls_middle
+    21300032: marketstalls_end_right
+    21300034: marketstalls_end_box
+    21300036: marketstalls_16_0
+    21300038: marketstalls_16_1
+    21300040: marketstalls_16_4
+    21300042: marketstalls_16_6
+    21300044: marketstalls_16_7
+    21300046: marketstalls_16_8
+    21300048: marketstalls_16_9
+    21300050: marketstalls_16_10
+    21300052: marketstalls_16_11
+    21300054: marketstalls_16_12
+    21300056: marketstalls_16_13
+    21300058: marketstalls_16_14
+    21300060: marketstalls_16_15
+    21300062: marketstalls_16_16
+    21300064: marketstalls_16_17
+    21300066: marketstalls_16_18
+    21300068: marketstalls_16_19
+    21300070: marketstalls_16_20
+    21300072: marketstalls_16_21
+    21300074: marketstalls_16_22
+    21300076: marketstalls_16_23
+    21300078: marketstalls_16_24
+    21300080: marketstalls_16_25
+    21300082: marketstalls_16_26
+    21300084: marketstalls_16_27
+    21300086: marketstalls_16_28
+    21300088: marketstalls_16_29
+    21300090: marketstalls_16_30
+    21300092: marketstalls_16_31
+    21300094: marketstalls_16_32
+    21300096: marketstalls_16_33
+    21300098: marketstalls_16_34
+    21300100: marketstalls_16_35
+    21300102: marketstalls_16_36
+    21300104: marketstalls_16_37
+    21300106: marketstalls_16_38
+    21300108: marketstalls_16_39
+    21300110: marketstalls_16_40
+    21300112: marketstalls_16_41
+    21300114: marketstalls_16_42
+    21300116: marketstalls_16_43
+    21300118: marketstalls_16_44
+    21300120: marketstalls_16_45
+    21300122: marketstalls_16_46
+    21300124: marketstalls_16_47
+    21300126: marketstalls_16_48
+    21300128: marketstalls_16_49
+    21300130: marketstalls_16_50
+    21300132: marketstalls_16_51
+    21300134: marketstalls_16_52
+    21300136: marketstalls_16_53
+    21300138: marketstalls_16_54
+    21300140: marketstalls_16_55
+    21300142: marketstalls_16_56
+    21300144: marketstalls_16_57
+    21300146: marketstalls_16_58
+    21300148: marketstalls_16_59
+    21300150: marketstalls_16_60
+    21300152: marketstalls_16_61
+    21300154: marketstalls_16_62
+    21300156: marketstalls_16_63
+    21300158: marketstalls_16_64
+    21300160: marketstalls_16_65
+    21300162: marketstalls_16_66
+    21300164: marketstalls_16_67
+    21300166: marketstalls_16_68
+    21300168: marketstalls_16_69
+    21300170: marketstalls_16_70
+    21300172: marketstalls_16_71
+    21300174: marketstalls_16_72
+    21300176: marketstalls_16_73
+    21300178: marketstalls_16_74
+    21300180: marketstalls_16_75
+    21300182: marketstalls_16_76
+    21300184: marketstalls_16_77
+    21300186: marketstalls_16_78
+    21300188: marketstalls_16_79
+    21300190: marketstalls_16_80
+    21300192: marketstalls_16_81
+    21300194: marketstalls_16_82
+    21300196: marketstalls_16_83
+    21300198: marketstalls_16_84
+    21300200: marketstalls_16_85
+    21300202: marketstalls_16_86
+    21300204: marketstalls_16_87
+    21300206: marketstalls_16_88
+    21300208: marketstalls_16_89
+    21300210: marketstalls_16_90
+    21300212: marketstalls_16_91
+    21300214: marketstalls_16_92
+    21300216: marketstalls_16_93
+    21300218: marketstalls_16_94
+    21300220: marketstalls_16_95
+    21300222: marketstalls_16_96
+    21300224: marketstalls_16_97
+    21300226: marketstalls_16_98
+    21300228: marketstalls_16_99
+    21300230: marketstalls_16_100
+    21300232: marketstalls_16_101
+    21300234: marketstalls_16_102
+    21300236: marketstalls_16_103
+    21300238: marketstalls_16_104
+    21300240: marketstalls_16_105
+    21300242: marketstalls_16_106
+    21300244: marketstalls_16_107
+    21300246: marketstalls_16_108
+    21300248: marketstalls_16_109
+    21300250: marketstalls_16_110
+    21300252: marketstalls_16_111
+    21300254: marketstalls_16_112
+    21300256: marketstalls_16_113
+    21300258: marketstalls_16_114
+    21300260: marketstalls_16_115
+    21300262: marketstalls_16_116
+    21300264: marketstalls_16_117
+    21300266: marketstalls_16_118
+    21300268: marketstalls_16_119
+    21300270: marketstalls_16_120
+    21300272: marketstalls_16_121
+    21300274: marketstalls_16_122
+    21300276: marketstalls_16_123
+    21300278: marketstalls_16_124
+    21300280: marketstalls_16_125
+    21300282: marketstalls_16_126
+    21300284: marketstalls_16_127
+    21300286: marketstalls_16_128
+    21300288: marketstalls_16_129
+    21300290: marketstalls_16_130
+    21300292: marketstalls_16_131
+    21300294: marketstalls_16_132
+    21300296: marketstalls_16_133
+    21300298: marketstalls_16_134
+    21300300: marketstalls_16_135
+    21300302: marketstalls_16_136
+    21300304: marketstalls_16_137
+    21300306: marketstalls_16_138
+    21300308: marketstalls_16_139
+    21300310: marketstalls_16_140
+    21300312: marketstalls_16_141
+    21300314: marketstalls_16_142
+    21300316: marketstalls_16_143
+    21300318: marketstalls_16_144
+    21300320: marketstalls_16_145
+    21300322: marketstalls_16_146
+    21300324: marketstalls_16_147
+    21300326: marketstalls_16_148
+    21300328: marketstalls_16_149
+    21300330: marketstalls_16_150
+    21300332: marketstalls_16_151
+    21300334: marketstalls_16_152
+    21300336: marketstalls_16_153
+    21300338: marketstalls_16_154
+    21300340: marketstalls_16_155
+    21300342: marketstalls_16_156
+    21300344: marketstalls_16_157
+    21300346: marketstalls_16_158
+    21300348: marketstalls_16_159
+    21300350: marketstalls_16_160
+    21300352: marketstalls_16_161
+    21300354: marketstalls_16_162
+    21300356: marketstalls_16_163
+    21300358: marketstalls_16_164
+    21300360: marketstalls_16_165
+    21300362: marketstalls_16_166
+    21300364: marketstalls_16_167
+    21300366: marketstalls_16_168
+    21300368: marketstalls_16_169
+    21300370: marketstalls_16_170
+    21300372: marketstalls_16_171
+    21300374: marketstalls_16_172
+    21300376: marketstalls_16_173
+    21300378: marketstalls_16_174
+    21300380: marketstalls_16_175
+    21300382: marketstalls_16_176
+    21300384: marketstalls_16_177
+    21300386: marketstalls_16_178
+    21300388: marketstalls_16_179
+    21300390: marketstalls_16_180
+    21300392: marketstalls_16_181
+    21300394: marketstalls_16_182
+    21300396: marketstalls_16_183
+    21300398: marketstalls_16_184
+    21300400: marketstalls_16_185
+    21300402: marketstalls_16_186
+    21300404: marketstalls_16_187
+    21300406: marketstalls_16_188
+    21300408: marketstalls_16_189
+    21300410: marketstalls_16_190
+    21300412: marketstalls_16_191
+    21300414: marketstalls_16_192
+    21300416: marketstalls_16_193
+    21300418: marketstalls_16_194
+    21300420: marketstalls_16_195
+    21300422: marketstalls_16_196
+    21300424: marketstalls_16_197
+    21300426: marketstalls_16_198
+    21300428: marketstalls_16_199
+    21300430: marketstalls_16_200
+    21300432: marketstalls_16_201
+    21300434: marketstalls_16_202
+    21300436: marketstalls_16_203
+    21300438: marketstalls_16_204
+    21300440: marketstalls_16_205
+    21300442: marketstalls_16_206
+    21300444: marketstalls_16_207
+    21300446: marketstalls_16_208
+    21300448: marketstalls_16_209
+    21300450: marketstalls_16_210
+    21300452: marketstalls_16_211
+    21300454: marketstalls_16_212
+    21300456: marketstalls_16_213
+    21300458: marketstalls_16_214
+    21300460: marketstalls_16_215
+    21300462: marketstalls_16_216
+    21300464: marketstalls_16_217
+    21300466: marketstalls_16_218
+    21300468: marketstalls_16_219
+    21300470: marketstalls_16_220
+    21300472: marketstalls_16_221
+    21300474: marketstalls_16_222
+    21300476: marketstalls_16_223
+    21300478: marketstalls_16_224
+    21300480: marketstalls_16_225
+    21300482: marketstalls_16_226
+    21300484: marketstalls_16_227
+    21300486: marketstalls_16_228
+    21300488: marketstalls_16_229
+    21300490: marketstalls_16_230
+    21300492: marketstalls_16_231
+    21300494: marketstalls_16_232
+    21300496: marketstalls_16_233
+    21300498: marketstalls_16_234
+    21300500: marketstalls_16_235
+    21300502: marketstalls_16_236
+    21300504: marketstalls_16_237
+    21300506: marketstalls_16_238
+    21300508: marketstalls_16_239
+    21300510: marketstalls_16_240
+    21300512: marketstalls_16_241
+    21300514: marketstalls_16_242
+    21300516: marketstalls_16_243
+    21300518: marketstalls_16_244
+    21300520: marketstalls_16_245
+    21300522: marketstalls_16_246
+    21300524: marketstalls_16_247
+    21300526: marketstalls_16_248
+    21300528: marketstalls_16_249
+    21300530: marketstalls_16_250
+    21300532: marketstalls_16_251
+    21300534: marketstalls_16_252
+    21300536: marketstalls_16_253
+    21300538: marketstalls_16_254
+    21300540: marketstalls_16_255
+    21300542: marketstalls_16_256
+    21300544: marketstalls_16_257
+    21300546: marketstalls_16_258
+    21300548: marketstalls_16_259
+    21300550: marketstalls_16_260
+    21300552: marketstalls_16_261
+    21300554: marketstalls_16_262
+    21300556: marketstalls_16_263
+    21300558: marketstalls_16_264
+    21300560: marketstalls_16_265
+    21300562: marketstalls_16_266
+    21300564: marketstalls_16_267
+    21300566: marketstalls_16_268
+    21300568: marketstalls_16_269
+    21300570: marketstalls_16_270
+    21300572: marketstalls_16_271
+    21300574: marketstalls_16_272
+    21300576: marketstalls_16_273
+    21300578: marketstalls_16_274
+    21300580: marketstalls_16_275
+    21300582: marketstalls_16_276
+    21300584: marketstalls_16_277
+    21300586: marketstalls_16_278
+    21300588: marketstalls_16_279
+    21300590: marketstalls_16_280
+    21300592: marketstalls_16_281
+    21300594: marketstalls_16_282
+    21300596: marketstalls_16_283
+    21300598: marketstalls_16_284
+    21300600: marketstalls_16_285
+    21300602: marketstalls_16_286
+    21300604: marketstalls_16_287
+  externalObjects: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -30,7 +334,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -1
     wrapU: 1
@@ -39,13 +343,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -56,16 +360,1036 @@ TextureImporter:
   textureFormatSet: 0
   platformSettings:
   - buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 256
+    resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: marketstalls_16_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_13
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_14
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_17
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_19
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_21
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_22
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_23
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_25
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_27
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_29
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_31
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_32
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_33
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_34
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_35
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_37
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_38
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_39
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_40
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_41
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_42
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_43
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_44
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_45
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_46
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_47
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_49
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_50
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_51
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_52
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_53
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_54
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_55
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_56
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_57
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_58
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_59
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_61
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_62
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_63
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_64
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_65
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_66
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_67
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_68
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_69
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_70
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: marketstalls_16_71
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 
