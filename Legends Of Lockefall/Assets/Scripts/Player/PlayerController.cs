@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using UnityEngine.EventSystems;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
@@ -21,7 +20,7 @@ public class PlayerController : MonoBehaviour {
         speed = hero.heroStats.baseSpeed;
 	}
 
-	void FixedUpdate ()
+    void FixedUpdate ()
     {
         moving = false;
         float horizontal = Mathf.RoundToInt(Input.GetAxisRaw("Horizontal"));

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class WeaponController : MonoBehaviour {
     public GameObject currentWeapon;
+    public List<Weapon> weaponQuickSlots;
     [HideInInspector] public Collider2D hitbox;
     [HideInInspector] public Animator weaponAnimator;
 

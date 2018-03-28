@@ -7,7 +7,7 @@ public class NPCInteraction : Interactable {
     public string NPCName;
     public string[] dialogue;
     
-    public override void Interact()
+    public override void Interact(GameObject player)
     {
         TextBoxManager.instance.AddNewDialogue(dialogue, NPCName);
     }

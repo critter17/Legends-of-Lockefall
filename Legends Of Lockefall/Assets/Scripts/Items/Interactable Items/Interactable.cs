@@ -2,15 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interactable : MonoBehaviour {
-    public bool destroyOnInteract;
-
-    public virtual void Interact()
-    {
-        if(destroyOnInteract)
-        {
-            Debug.Log("Destroying item...");
-            Destroy(gameObject);
-        }
-    }
+public abstract class Interactable : MonoBehaviour {
+    public abstract void Interact(GameObject player);
 }

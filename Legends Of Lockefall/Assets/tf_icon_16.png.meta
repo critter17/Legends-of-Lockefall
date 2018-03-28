@@ -106,10 +106,10 @@ TextureImporter:
     21300198: tf_icon_16_99
     21300200: tf_icon_16_100
     21300202: tf_icon_16_101
-    21300204: tf_icon_16_102
-    21300206: tf_icon_16_103
-    21300208: tf_icon_16_104
-    21300210: tf_icon_16_105
+    21300204: axe1
+    21300206: axe2
+    21300208: axe3
+    21300210: axe4
     21300212: tf_icon_16_106
     21300214: tf_icon_16_107
     21300216: tf_icon_16_108
@@ -1843,7 +1843,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: tf_icon_16_102
+      name: axe1
       rect:
         serializedVersion: 2
         x: 112
@@ -1857,7 +1857,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: tf_icon_16_103
+      name: axe2
       rect:
         serializedVersion: 2
         x: 128
@@ -1871,7 +1871,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: tf_icon_16_104
+      name: axe3
       rect:
         serializedVersion: 2
         x: 144
@@ -1885,7 +1885,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: tf_icon_16_105
+      name: axe4
       rect:
         serializedVersion: 2
         x: 160

@@ -6,7 +6,7 @@ using UnityEngine;
 public class Currency : Item {
     public int currencyAmount = 0;
 
-    public override void ItemAction(GameObject player)
+    public override void ItemPickup()
     {
         PlayerManager.instance.totalCurrency += currencyAmount;
     }

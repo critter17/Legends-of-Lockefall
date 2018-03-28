@@ -18,13 +18,8 @@ public class Weapon : Item {
         this.canBreak = canBreak;
     }
 
-    public override void ItemAction(GameObject player)
+    public override void ItemInteract(GameObject player)
     {
-        Debug.Log("Weapon action");
-    }
-
-    public void DisplayWeaponStats()
-    {
-
+        PlayerInventory.instance.AddWeapon(this);      
     }
 }

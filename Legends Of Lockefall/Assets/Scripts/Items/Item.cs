@@ -6,5 +6,18 @@ public abstract class Item : ScriptableObject {
     public Sprite itemSprite = null;
     public bool isDefaultItem = false;
 
-    public abstract void ItemAction(GameObject player);
+    public virtual void ItemInteract(GameObject player)
+    {
+        Debug.Log("Interacting with " + itemName);
+    }
+
+    public virtual void ItemPickup()
+    {
+        Debug.Log("Picked up " + itemName);
+    }
+
+    public virtual void InventoryItemAction()
+    {
+        Debug.Log("Do some action with " + itemName);
+    }
 }

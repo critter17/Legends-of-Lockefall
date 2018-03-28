@@ -16,11 +16,11 @@ public class QuestGiver : NPCInteraction {
     public string[] completionDialogue;
     public string[] finishedDialogue;
 
-    public override void Interact()
+    public override void Interact(GameObject player)
     {
         if(!AssignedQuest && !Helped)
         {
-            base.Interact();
+            base.Interact(player);
             AssignQuest();
         }else if(AssignedQuest && !Helped)
         {
