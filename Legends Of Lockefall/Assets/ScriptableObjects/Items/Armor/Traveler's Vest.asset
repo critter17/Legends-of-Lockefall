@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81c7ac3adb970a147b7995feeabb2f8e, type: 3}
+  m_Name: Traveler's Vest
+  m_EditorClassIdentifier: 
+  itemName: Traveler's Vest
+  itemSprite: {fileID: 21300306, guid: e8838ee3a4eed884b95e29d22d75f125, type: 3}
+  isDefaultItem: 0
+  maxInventorySpace: 10
+  attackModifier: 0
+  defenseModifier: 0
+  elementType: 14

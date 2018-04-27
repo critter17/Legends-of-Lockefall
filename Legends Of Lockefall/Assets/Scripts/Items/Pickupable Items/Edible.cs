@@ -9,6 +9,6 @@ public class Edible : Item {
 
 	public override void ItemPickup()
     {
-        
+        PlayerInventory.instance.edibleInventory.AddEdible(this);
     }
 }

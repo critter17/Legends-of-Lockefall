@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerInventory : MonoBehaviour {
     #region Singleton
@@ -8,53 +9,38 @@ public class PlayerInventory : MonoBehaviour {
 
     private void Awake()
     {
-        if(instance != null)
+        if(instance == null)
         {
-            Debug.LogWarning("More than one instance of PlayerInventory");
-            return;
+            instance = this;
         }
-        instance = this;
+        else if(instance != null)
+        {
+            Destroy(gameObject);
+        }
     }
     #endregion
 
-    public delegate void OnItemChanged();
-    public OnItemChanged onItemChangedCallback;
-
-    public List<Weapon> weaponList;
-    public List<Edible> consumableList;
-
-    private WeaponController weaponController;
-
-    public int itemSpace = 60;
+    public GameObject inventoryPanel;
+    public WeaponInventory weaponInventory;
+    public ArmorInventory armorInventory;
+    public DisposableInventory disposableInventory;
+    public ArtifactInventory artifactInventory;
+    public EdibleInventory edibleInventory;
 
     private void Start()
     {
-        weaponList = new List<Weapon>();
-        consumableList = new List<Edible>();
-        weaponController = GetComponentInChildren<WeaponController>();
-    }
-
-    public bool AddWeapon(Weapon newWeapon)
-    {
-        if(weaponList.Count >= itemSpace)
+        if(SceneManager.GetActiveScene().name == "MainMenu")
         {
-            Debug.Log("Not enough space");
-            return false;
+            gameObject.SetActive(false);
         }
-        Debug.Log("Adding weapon");
-        weaponList.Add(newWeapon);
 
-        if(onItemChangedCallback != null)
-            onItemChangedCallback.Invoke();
-
-        return true;
     }
 
-    public void RemoveWeapon(Weapon weaponToRemove)
+    private void Update()
     {
-        weaponList.Remove(weaponToRemove);
-
-        if(onItemChangedCallback != null)
-            onItemChangedCallback.Invoke();
+        if(Input.GetButtonDown("Inventory"))
+        {
+            inventoryPanel.SetActive(!inventoryPanel.activeSelf);
+        }
     }
 }

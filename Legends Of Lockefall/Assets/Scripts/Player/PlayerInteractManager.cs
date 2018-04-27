@@ -10,7 +10,7 @@ public class PlayerInteractManager : MonoBehaviour {
 	void Update () {
 		if(Input.GetButtonDown("Fire2"))
         {
-            if(focus.Count != 0)
+            if(focus.Count > 0)
             {
                 focus[focus.Count - 1].Interact(this.gameObject);
             }

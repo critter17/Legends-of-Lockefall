@@ -15,9 +15,9 @@ public class QuestManager : MonoBehaviour {
         {
             instance = this;
         }
-        else
+        else if(instance != null)
         {
-            Debug.LogWarning("More than one instance of QuestManager detected");
+            Destroy(gameObject);
         }
     }
 

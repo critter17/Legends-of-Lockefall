@@ -1,50 +1,32 @@
-﻿using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour {
 
     #region Singleton
 
     public static PlayerManager instance;
+    public GameObject[] characterList;
+    private int selectedCharacterIndex;
 
     private void Awake()
     {
-        if (instance == null)
+        if(instance == null)
         {
             instance = this;
         }
-        else
+        else if(instance != null)
         {
-            Debug.LogWarning("More than one instance of PlayerManager detected");
+            Destroy(gameObject);
         }
-
-        theChar = FindObjectOfType<SelectCharacter>();
-        for(int i = 0; i < theChar.transform.childCount; i++)
-        {
-            characterList.Add(theChar.transform.GetChild(i).gameObject);
-        }
-
-        selectedCharacterIndex = PlayerPrefs.GetInt("CharacterSelected");
-        player = characterList[selectedCharacterIndex];
-        for(int i = 0; i < characterList.Count; i++)
-        {
-            if(i != selectedCharacterIndex)
-            {
-                Destroy(characterList[i]);
-            }
-        }
-        player.SetActive(true);
     }
 
     #endregion
 
-    public SelectCharacter theChar;
     public GameObject player;
-    public List<GameObject> characterList;
-    private int selectedCharacterIndex;
-    public Text currencyText;
-    public int totalCurrency;
+    public PlayerInventory playerInventory;
 
     public delegate void OnEnemyKilled(string EnemyName); // I'm just putting it here because I can.
     public OnEnemyKilled OnEnemyKilledCallback;
@@ -53,11 +35,34 @@ public class PlayerManager : MonoBehaviour {
     private void Start()
     {
         OnEnemyKilledCallback += Filler;
+        if(SceneManager.GetActiveScene().name == "MainMenu")
+        {
+            gameObject.SetActive(false);
+        }
+    }
+
+    private void OnEnable()
+    {
+        if(SceneManager.GetActiveScene().name != "MainMenu")
+        {
+            selectedCharacterIndex = PlayerPrefs.GetInt("CharacterSelected");
+            player = Instantiate(characterList[selectedCharacterIndex]);
+            for(int i = 0; i < characterList.Length; i++)
+            {
+                if(i != selectedCharacterIndex)
+                {
+                    characterList[i].SetActive(false);
+                }
+            }
+            player.transform.SetParent(transform);
+            player.SetActive(true);
+            playerInventory.gameObject.SetActive(true);
+        }
     }
 
     private void Update()
     {
-        currencyText.text = totalCurrency.ToString();
+
     }
 
     void Filler(string filler)

@@ -8,6 +8,6 @@ public class Currency : Item {
 
     public override void ItemPickup()
     {
-        PlayerManager.instance.totalCurrency += currencyAmount;
+        GameManager.instance.currency += currencyAmount;
     }
 }

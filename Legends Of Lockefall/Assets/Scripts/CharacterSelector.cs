@@ -44,7 +44,6 @@ public class CharacterSelector : MonoBehaviour {
     {
         GameObject selectedCharacter = characters[currentIndex];
         Debug.Log(selectedCharacter.name);
-
         PlayerPrefs.SetInt("CharacterSelected", currentIndex);
         SceneManager.LoadScene("TestingSandbox");
 

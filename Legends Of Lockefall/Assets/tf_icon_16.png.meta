@@ -125,11 +125,11 @@ TextureImporter:
     21300236: tf_icon_16_118
     21300238: tf_icon_16_119
     21300240: tf_icon_16_120
-    21300242: tf_icon_16_121
+    21300242: disposable_bow
     21300244: tf_icon_16_122
     21300246: tf_icon_16_123
     21300248: tf_icon_16_124
-    21300250: tf_icon_16_125
+    21300250: disposable_arrows
     21300252: tf_icon_16_126
     21300254: tf_icon_16_127
     21300256: tf_icon_16_128
@@ -141,7 +141,7 @@ TextureImporter:
     21300268: tf_icon_16_134
     21300270: tf_icon_16_135
     21300272: tf_icon_16_136
-    21300274: tf_icon_16_137
+    21300274: disposable_bomb
     21300276: tf_icon_16_138
     21300278: tf_icon_16_139
     21300280: tf_icon_16_140
@@ -155,9 +155,9 @@ TextureImporter:
     21300296: tf_icon_16_148
     21300298: tf_icon_16_149
     21300300: tf_icon_16_150
-    21300302: tf_icon_16_151
-    21300304: tf_icon_16_152
-    21300306: tf_icon_16_153
+    21300302: armor1
+    21300304: armor2
+    21300306: armor3
     21300308: tf_icon_16_154
     21300310: tf_icon_16_155
     21300312: tf_icon_16_156
@@ -202,7 +202,7 @@ TextureImporter:
     21300390: tf_icon_16_195
     21300392: tf_icon_16_196
     21300394: tf_icon_16_197
-    21300396: tf_icon_16_198
+    21300396: disposable_rope
     21300398: tf_icon_16_199
     21300400: tf_icon_16_200
     21300402: tf_icon_16_201
@@ -218,9 +218,9 @@ TextureImporter:
     21300422: tf_icon_16_211
     21300424: tf_icon_16_212
     21300426: tf_icon_16_213
-    21300428: tf_icon_16_214
-    21300430: tf_icon_16_215
-    21300432: tf_icon_16_216
+    21300428: artifact1
+    21300430: artifact2
+    21300432: artifact3
     21300434: tf_icon_16_217
     21300436: tf_icon_16_218
     21300438: tf_icon_16_219
@@ -298,7 +298,7 @@ TextureImporter:
     21300582: tf_icon_16_291
     21300584: tf_icon_16_292
     21300586: blue_jewel
-    21300588: tf_icon_16_294
+    21300588: currency_icon
     21300590: tf_icon_16_295
     21300592: tf_icon_16_296
     21300594: gold_jewel
@@ -2109,7 +2109,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: tf_icon_16_121
+      name: disposable_bow
       rect:
         serializedVersion: 2
         x: 160
@@ -2165,7 +2165,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: tf_icon_16_125
+      name: disposable_arrows
       rect:
         serializedVersion: 2
         x: 224
@@ -2333,7 +2333,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: tf_icon_16_137
+      name: disposable_bomb
       rect:
         serializedVersion: 2
         x: 160
@@ -2529,7 +2529,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: tf_icon_16_151
+      name: armor1
       rect:
         serializedVersion: 2
         x: 128
@@ -2543,7 +2543,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: tf_icon_16_152
+      name: armor2
       rect:
         serializedVersion: 2
         x: 144
@@ -2557,7 +2557,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: tf_icon_16_153
+      name: armor3
       rect:
         serializedVersion: 2
         x: 160
@@ -3187,7 +3187,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: tf_icon_16_198
+      name: disposable_rope
       rect:
         serializedVersion: 2
         x: 112
@@ -3411,7 +3411,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: tf_icon_16_214
+      name: artifact1
       rect:
         serializedVersion: 2
         x: 112
@@ -3425,7 +3425,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: tf_icon_16_215
+      name: artifact2
       rect:
         serializedVersion: 2
         x: 128
@@ -3439,7 +3439,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: tf_icon_16_216
+      name: artifact3
       rect:
         serializedVersion: 2
         x: 144
@@ -4531,7 +4531,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: tf_icon_16_294
+      name: currency_icon
       rect:
         serializedVersion: 2
         x: 112

@@ -20,6 +20,6 @@ public class Weapon : Item {
 
     public override void ItemInteract(GameObject player)
     {
-        PlayerInventory.instance.AddWeapon(this);      
+        PlayerInventory.instance.weaponInventory.AddWeapon(this);   
     }
 }

@@ -8,6 +8,6 @@ public class ItemPickup : PickupableOnContact {
     public override void Pickup(GameObject player)
     {
         item.ItemPickup();
-        Destroy(gameObject);
+        Destroy(this.gameObject);
     }
 }

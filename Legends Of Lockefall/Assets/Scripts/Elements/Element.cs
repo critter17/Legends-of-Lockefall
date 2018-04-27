@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum ElementType { Normal, Fire, Ice, Water, Wind, Shock, Earth, Toxic, Magic, Blast, Monster, Ghoul, Chi };
+public enum ElementType { Normal, Fire, Ice, Water, Wind, Shock, Earth, Toxic, Magic, Blast, Monster, Ghoul, Chi, Deity, Special };
 
 [CreateAssetMenu(fileName = "Element", menuName = "Element")]
 public class Element : ScriptableObject {
@@ -205,6 +205,38 @@ public class Element : ScriptableObject {
                 break;
 
             case ElementType.Chi:
+                elementWeaknessMultipliers.Add(ElementType.Normal, 1f);
+                elementWeaknessMultipliers.Add(ElementType.Fire, 1f);
+                elementWeaknessMultipliers.Add(ElementType.Ice, 1f);
+                elementWeaknessMultipliers.Add(ElementType.Water, 1f);
+                elementWeaknessMultipliers.Add(ElementType.Wind, 1f);
+                elementWeaknessMultipliers.Add(ElementType.Shock, 1f);
+                elementWeaknessMultipliers.Add(ElementType.Earth, 1f);
+                elementWeaknessMultipliers.Add(ElementType.Toxic, 1f);
+                elementWeaknessMultipliers.Add(ElementType.Magic, 1f);
+                elementWeaknessMultipliers.Add(ElementType.Blast, 1f);
+                elementWeaknessMultipliers.Add(ElementType.Monster, 1f);
+                elementWeaknessMultipliers.Add(ElementType.Ghoul, 1f);
+                elementWeaknessMultipliers.Add(ElementType.Chi, 1f);
+                break;
+
+            case ElementType.Deity:
+                elementWeaknessMultipliers.Add(ElementType.Normal, 1f);
+                elementWeaknessMultipliers.Add(ElementType.Fire, 1f);
+                elementWeaknessMultipliers.Add(ElementType.Ice, 1f);
+                elementWeaknessMultipliers.Add(ElementType.Water, 1f);
+                elementWeaknessMultipliers.Add(ElementType.Wind, 1f);
+                elementWeaknessMultipliers.Add(ElementType.Shock, 1f);
+                elementWeaknessMultipliers.Add(ElementType.Earth, 1f);
+                elementWeaknessMultipliers.Add(ElementType.Toxic, 1f);
+                elementWeaknessMultipliers.Add(ElementType.Magic, 1f);
+                elementWeaknessMultipliers.Add(ElementType.Blast, 1f);
+                elementWeaknessMultipliers.Add(ElementType.Monster, 1f);
+                elementWeaknessMultipliers.Add(ElementType.Ghoul, 1f);
+                elementWeaknessMultipliers.Add(ElementType.Chi, 1f);
+                break;
+
+            case ElementType.Special:
                 elementWeaknessMultipliers.Add(ElementType.Normal, 1f);
                 elementWeaknessMultipliers.Add(ElementType.Fire, 1f);
                 elementWeaknessMultipliers.Add(ElementType.Ice, 1f);

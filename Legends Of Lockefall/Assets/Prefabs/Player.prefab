@@ -111,7 +111,6 @@ GameObject:
   - component: {fileID: 114166259543983816}
   - component: {fileID: 114892602790120992}
   - component: {fileID: 114933544682771032}
-  - component: {fileID: 114324089412843560}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -300,6 +299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58f91bbeab8d88a4aacb87e970a8b17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerRigidBody: {fileID: 0}
   moving: 0
   lastMove: {x: 0, y: 0}
   canMove: 1
@@ -327,18 +327,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   focus: []
---- !u!114 &114324089412843560
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1596839322022270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccc74107d4d2f2f4b8777553c38f389c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  character: {fileID: 0}
 --- !u!114 &114709492608345840
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -406,7 +394,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc1d64e79c668c64ca5e0d2639525e6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentWeapon: {fileID: 0}
+  weaponQuickSlots: []
   hitbox: {fileID: 0}
+  weaponAnimator: {fileID: 0}
 --- !u!114 &114969507013822932
 MonoBehaviour:
   m_ObjectHideFlags: 1

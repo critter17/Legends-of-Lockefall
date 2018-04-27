@@ -3,8 +3,9 @@
 [CreateAssetMenu(fileName = "New Item", menuName = "Items/Generic")]
 public abstract class Item : ScriptableObject {
     public string itemName = "New Item";
+    public string itemDescription = "This item does something";
     public Sprite itemSprite = null;
-    public bool isDefaultItem = false;
+    public int maxInventorySpace = 1;
 
     public virtual void ItemInteract(GameObject player)
     {

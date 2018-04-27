@@ -56,18 +56,17 @@ GameObject:
   - component: {fileID: 50893172453152652}
   - component: {fileID: 114204741360310322}
   - component: {fileID: 114425033148859386}
-  - component: {fileID: 114329978483292700}
+  - component: {fileID: 114407449056414660}
   - component: {fileID: 114797162438557640}
   - component: {fileID: 114409162241341806}
   - component: {fileID: 61478023938715860}
-  - component: {fileID: 114439583348542324}
   m_Layer: 0
   m_Name: Fae-Linn
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4109774379798040
 Transform:
   m_ObjectHideFlags: 1
@@ -186,7 +185,7 @@ MonoBehaviour:
   moving: 0
   lastMove: {x: 0, y: 0}
   canMove: 1
---- !u!114 &114329978483292700
+--- !u!114 &114407449056414660
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -197,10 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b1e70205829c86469c544b7adc61d87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heartParent: {fileID: 0}
-  heartPrefab: {fileID: 0}
-  fullHeart: {fileID: 21300000, guid: e8838ee3a4eed884b95e29d22d75f125, type: 3}
-  emptyHeart: {fileID: 21300002, guid: e8838ee3a4eed884b95e29d22d75f125, type: 3}
+  heartsParent: {fileID: 0}
 --- !u!114 &114409162241341806
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -225,21 +221,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackSpeed: 0.2
---- !u!114 &114439583348542324
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1747069131411220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1f7cefb3c1a0bc42b364f49cdb93bf6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponList: []
-  consumableList: []
-  weaponController: {fileID: 0}
-  itemSpace: 60
 --- !u!114 &114617965027829852
 MonoBehaviour:
   m_ObjectHideFlags: 1
