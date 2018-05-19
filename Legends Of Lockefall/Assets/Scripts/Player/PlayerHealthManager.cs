@@ -16,6 +16,7 @@ public class PlayerHealthManager : MonoBehaviour {
  
         for(int i = 0; i < hero.heroStats.maxHealth; i++)
         {
+            Debug.Log("Trying to create hearts");
             heartsParent.CreateHeart();
         }
 

@@ -47,7 +47,7 @@ public class TextBoxManager : MonoBehaviour {
         dialogueText.text = dialogueLines[dialogueIndex];
         nameText.text = speakerName;
         dialoguePanel.GetComponent<Animator>().SetBool("Opened", true);
-        PlayerManager.instance.player.GetComponent<PlayerController>().CanMove(false);
+        GameManager.instance.playerManager.playerMovement.CanMove(false);
     }
 
     public void ContinueDialogue()
@@ -60,7 +60,7 @@ public class TextBoxManager : MonoBehaviour {
         else
         {
             dialoguePanel.GetComponent<Animator>().SetBool("Opened", false);
-            PlayerManager.instance.player.GetComponent<PlayerController>().CanMove(true);
+            GameManager.instance.playerManager.playerMovement.CanMove(true);
         }
     }
 }

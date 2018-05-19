@@ -1,6 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
-
 
 public static class PixelPerfect {
 	//You can change this value if you want to use a different world pixel size

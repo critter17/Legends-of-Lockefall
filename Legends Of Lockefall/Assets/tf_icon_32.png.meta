@@ -343,8 +343,8 @@ TextureImporter:
     21300672: tf_icon_32_333
     21300674: tf_icon_32_334
     21300676: full_heart
-    21300678: tf_icon_32_0
-    21300680: tf_icon_32_1
+    21300678: full_heart_32
+    21300680: empty_heart_32
     21300682: tf_icon_32_97
   externalObjects: {}
   serializedVersion: 4
@@ -422,7 +422,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tf_icon_32_0
+      name: full_heart_32
       rect:
         serializedVersion: 2
         x: 32
@@ -436,7 +436,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: tf_icon_32_1
+      name: empty_heart_32
       rect:
         serializedVersion: 2
         x: 64

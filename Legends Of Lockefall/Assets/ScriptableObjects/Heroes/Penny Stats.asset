@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Penny Stats
   m_EditorClassIdentifier: 
   name: Penny Panda
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 1b5181e825f154d46b4b5fe772c2293e, type: 3}
   maxHealth: 3
   currentHealth: 3
   baseStrength: 5

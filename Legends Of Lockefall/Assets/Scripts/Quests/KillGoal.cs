@@ -19,7 +19,7 @@ public class KillGoal : Goal {
     public override void Init()
     {
         base.Init();
-        PlayerManager.instance.OnEnemyKilledCallback += EnemyDied;
+        GameManager.instance.playerManager.OnEnemyKilledCallback += EnemyDied;
     }
 
     void EnemyDied(string enemyName)

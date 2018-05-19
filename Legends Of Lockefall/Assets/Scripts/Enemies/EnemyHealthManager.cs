@@ -35,8 +35,8 @@ public class EnemyHealthManager : MonoBehaviour {
 
     public void Die()
     {
-        PlayerManager.instance.OnEnemyKilledCallback.Invoke(EnemyName);
-        Destroy(this.gameObject);
+        GameManager.instance.playerManager.OnEnemyKilledCallback.Invoke(EnemyName);
+        Destroy(gameObject);
     }
 
     IEnumerator DamageBoost()

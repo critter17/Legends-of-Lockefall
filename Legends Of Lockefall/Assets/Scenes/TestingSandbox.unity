@@ -156,7 +156,7 @@ Prefab:
         type: 2}
       propertyPath: pixelPerfectCamera
       value: 
-      objectReference: {fileID: 469628109}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e8b5a4c0cd3d59345807533c38fe1a5a, type: 2}
   m_IsPrefabParent: 0
@@ -203,7 +203,7 @@ Prefab:
         type: 2}
       propertyPath: pixelPerfectCamera
       value: 
-      objectReference: {fileID: 469628109}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9772207a9567d9548af900026e9d730d, type: 2}
   m_IsPrefabParent: 0
@@ -250,7 +250,7 @@ Prefab:
         type: 2}
       propertyPath: pixelPerfectCamera
       value: 
-      objectReference: {fileID: 469628109}
+      objectReference: {fileID: 1615803112}
     - target: {fileID: 1341176107584522, guid: 21a45fb06eba48b4bbcb9d3122a5fb37, type: 2}
       propertyPath: m_Name
       value: Arrows (1)
@@ -356,7 +356,7 @@ Prefab:
         type: 2}
       propertyPath: pixelPerfectCamera
       value: 
-      objectReference: {fileID: 469628109}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b722b67f2e10afe42b18ba05c6f3829d, type: 2}
   m_IsPrefabParent: 0
@@ -401,7 +401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2ed81fca1ac3749a83e9e78e6d17fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pixelPerfectCamera: {fileID: 469628109}
+  pixelPerfectCamera: {fileID: 1615803112}
   fitType: 0
   parallaxLayer: 0
   pixelScale: 1
@@ -452,12 +452,87 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!114 &469628109 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114557115942852964, guid: efe66589a5c1d0c4786dce3939b2b3a9,
-    type: 2}
-  m_PrefabInternal: {fileID: 1509447132}
-  m_Script: {fileID: 11500000, guid: 5e9c55f9e2e4bf845a8f21eda023f561, type: 3}
+--- !u!1001 &502011704
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4071520527204148, guid: efe66589a5c1d0c4786dce3939b2b3a9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071520527204148, guid: efe66589a5c1d0c4786dce3939b2b3a9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071520527204148, guid: efe66589a5c1d0c4786dce3939b2b3a9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071520527204148, guid: efe66589a5c1d0c4786dce3939b2b3a9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071520527204148, guid: efe66589a5c1d0c4786dce3939b2b3a9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071520527204148, guid: efe66589a5c1d0c4786dce3939b2b3a9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071520527204148, guid: efe66589a5c1d0c4786dce3939b2b3a9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071520527204148, guid: efe66589a5c1d0c4786dce3939b2b3a9, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20786389001351124, guid: efe66589a5c1d0c4786dce3939b2b3a9,
+        type: 2}
+      propertyPath: field of view
+      value: 176.2626
+      objectReference: {fileID: 0}
+    - target: {fileID: 20786389001351124, guid: efe66589a5c1d0c4786dce3939b2b3a9,
+        type: 2}
+      propertyPath: orthographic size
+      value: 306.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114318616719983936, guid: efe66589a5c1d0c4786dce3939b2b3a9,
+        type: 2}
+      propertyPath: PixelsPerUnit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114557115942852964, guid: efe66589a5c1d0c4786dce3939b2b3a9,
+        type: 2}
+      propertyPath: targetPixelHeight
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 114557115942852964, guid: efe66589a5c1d0c4786dce3939b2b3a9,
+        type: 2}
+      propertyPath: cameraZoom
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114557115942852964, guid: efe66589a5c1d0c4786dce3939b2b3a9,
+        type: 2}
+      propertyPath: heightError
+      value: 107
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075268926796900, guid: efe66589a5c1d0c4786dce3939b2b3a9, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114557115942852964, guid: efe66589a5c1d0c4786dce3939b2b3a9,
+        type: 2}
+      propertyPath: pixelZoomMode
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: efe66589a5c1d0c4786dce3939b2b3a9, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &516008340
 Prefab:
   m_ObjectHideFlags: 0
@@ -501,7 +576,7 @@ Prefab:
         type: 2}
       propertyPath: pixelPerfectCamera
       value: 
-      objectReference: {fileID: 469628109}
+      objectReference: {fileID: 0}
     - target: {fileID: 1341176107584522, guid: e8b5a4c0cd3d59345807533c38fe1a5a, type: 2}
       propertyPath: m_Name
       value: Axe 3 (3)
@@ -1011,7 +1086,7 @@ Prefab:
         type: 2}
       propertyPath: pixelPerfectCamera
       value: 
-      objectReference: {fileID: 469628109}
+      objectReference: {fileID: 0}
     - target: {fileID: 61632982228457988, guid: ad99b3a2d1f01bf4598c193c6c2d048f,
         type: 2}
       propertyPath: m_Offset.x
@@ -1082,7 +1157,7 @@ Prefab:
         type: 2}
       propertyPath: pixelPerfectCamera
       value: 
-      objectReference: {fileID: 469628109}
+      objectReference: {fileID: 0}
     - target: {fileID: 1341176107584522, guid: 9772207a9567d9548af900026e9d730d, type: 2}
       propertyPath: m_Name
       value: Axe 2 (1)
@@ -1274,7 +1349,7 @@ Prefab:
         type: 2}
       propertyPath: pixelPerfectCamera
       value: 
-      objectReference: {fileID: 469628109}
+      objectReference: {fileID: 0}
     - target: {fileID: 61632982228457988, guid: ad99b3a2d1f01bf4598c193c6c2d048f,
         type: 2}
       propertyPath: m_Offset.x
@@ -1442,7 +1517,7 @@ Prefab:
         type: 2}
       propertyPath: pixelPerfectCamera
       value: 
-      objectReference: {fileID: 469628109}
+      objectReference: {fileID: 0}
     - target: {fileID: 1941513223297440, guid: b9267196060f70940969045a67ed4e46, type: 2}
       propertyPath: m_TagString
       value: Pickupable Item
@@ -1450,35 +1525,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9267196060f70940969045a67ed4e46, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1029626541 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1075268926796900, guid: efe66589a5c1d0c4786dce3939b2b3a9,
-    type: 2}
-  m_PrefabInternal: {fileID: 1509447132}
---- !u!114 &1029626542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1029626541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ee9c8c6eded00d46ae027bf1b6595e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PixelsPerUnit: 1
---- !u!114 &1029626547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1029626541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 615d159f6cf561c4897e41ee93747c6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  followTarget: {fileID: 0}
 --- !u!1001 &1030908962
 Prefab:
   m_ObjectHideFlags: 0
@@ -1522,7 +1568,7 @@ Prefab:
         type: 2}
       propertyPath: pixelPerfectCamera
       value: 
-      objectReference: {fileID: 469628109}
+      objectReference: {fileID: 0}
     - target: {fileID: 61632982228457988, guid: ad99b3a2d1f01bf4598c193c6c2d048f,
         type: 2}
       propertyPath: m_Offset.x
@@ -1591,7 +1637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2ed81fca1ac3749a83e9e78e6d17fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pixelPerfectCamera: {fileID: 469628109}
+  pixelPerfectCamera: {fileID: 1615803112}
   fitType: 0
   parallaxLayer: 0
   pixelScale: 1
@@ -1685,10 +1731,14 @@ Prefab:
         type: 2}
       propertyPath: pixelPerfectCamera
       value: 
-      objectReference: {fileID: 469628109}
+      objectReference: {fileID: 0}
     - target: {fileID: 1941513223297440, guid: b9267196060f70940969045a67ed4e46, type: 2}
       propertyPath: m_Name
       value: Apple (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1941513223297440, guid: b9267196060f70940969045a67ed4e46, type: 2}
+      propertyPath: m_TagString
+      value: Pickupable Item
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9267196060f70940969045a67ed4e46, type: 2}
@@ -1791,7 +1841,7 @@ Prefab:
         type: 2}
       propertyPath: pixelPerfectCamera
       value: 
-      objectReference: {fileID: 469628109}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ff999923fe65c14babf7cd14692a2b1, type: 2}
   m_IsPrefabParent: 0
@@ -2035,7 +2085,7 @@ Prefab:
         type: 2}
       propertyPath: pixelPerfectCamera
       value: 
-      objectReference: {fileID: 469628109}
+      objectReference: {fileID: 0}
     - target: {fileID: 1341176107584522, guid: e8b5a4c0cd3d59345807533c38fe1a5a, type: 2}
       propertyPath: m_Name
       value: Axe 3 (2)
@@ -2076,95 +2126,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1509447132
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4071520527204148, guid: efe66589a5c1d0c4786dce3939b2b3a9, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4071520527204148, guid: efe66589a5c1d0c4786dce3939b2b3a9, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4071520527204148, guid: efe66589a5c1d0c4786dce3939b2b3a9, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4071520527204148, guid: efe66589a5c1d0c4786dce3939b2b3a9, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4071520527204148, guid: efe66589a5c1d0c4786dce3939b2b3a9, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4071520527204148, guid: efe66589a5c1d0c4786dce3939b2b3a9, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4071520527204148, guid: efe66589a5c1d0c4786dce3939b2b3a9, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4071520527204148, guid: efe66589a5c1d0c4786dce3939b2b3a9, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114854839344808740, guid: efe66589a5c1d0c4786dce3939b2b3a9,
-        type: 2}
-      propertyPath: followTarget
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 20786389001351124, guid: efe66589a5c1d0c4786dce3939b2b3a9,
-        type: 2}
-      propertyPath: field of view
-      value: 176.2626
-      objectReference: {fileID: 0}
-    - target: {fileID: 20786389001351124, guid: efe66589a5c1d0c4786dce3939b2b3a9,
-        type: 2}
-      propertyPath: orthographic size
-      value: 306.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114318616719983936, guid: efe66589a5c1d0c4786dce3939b2b3a9,
-        type: 2}
-      propertyPath: PixelsPerUnit
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114557115942852964, guid: efe66589a5c1d0c4786dce3939b2b3a9,
-        type: 2}
-      propertyPath: targetPixelHeight
-      value: 360
-      objectReference: {fileID: 0}
-    - target: {fileID: 114557115942852964, guid: efe66589a5c1d0c4786dce3939b2b3a9,
-        type: 2}
-      propertyPath: cameraZoom
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114557115942852964, guid: efe66589a5c1d0c4786dce3939b2b3a9,
-        type: 2}
-      propertyPath: heightError
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114557115942852964, guid: efe66589a5c1d0c4786dce3939b2b3a9,
-        type: 2}
-      propertyPath: fitType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114557115942852964, guid: efe66589a5c1d0c4786dce3939b2b3a9,
-        type: 2}
-      propertyPath: pixelatedPostProcessing
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114854839344808740, guid: efe66589a5c1d0c4786dce3939b2b3a9, type: 2}
-    - {fileID: 114318616719983936, guid: efe66589a5c1d0c4786dce3939b2b3a9, type: 2}
-  m_ParentPrefab: {fileID: 100100000, guid: efe66589a5c1d0c4786dce3939b2b3a9, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1524401142
 Prefab:
   m_ObjectHideFlags: 0
@@ -2208,7 +2169,7 @@ Prefab:
         type: 2}
       propertyPath: pixelPerfectCamera
       value: 
-      objectReference: {fileID: 469628109}
+      objectReference: {fileID: 0}
     - target: {fileID: 1341176107584522, guid: 30480b9df3751004fab873ebe95acdbc, type: 2}
       propertyPath: m_Name
       value: Ring of Wishes (1)
@@ -2216,6 +2177,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 30480b9df3751004fab873ebe95acdbc, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1615803112 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114557115942852964, guid: efe66589a5c1d0c4786dce3939b2b3a9,
+    type: 2}
+  m_PrefabInternal: {fileID: 502011704}
+  m_Script: {fileID: 11500000, guid: 5e9c55f9e2e4bf845a8f21eda023f561, type: 3}
 --- !u!1 &1636727719
 GameObject:
   m_ObjectHideFlags: 0
@@ -2325,15 +2292,7 @@ Prefab:
         type: 2}
       propertyPath: pixelPerfectCamera
       value: 
-      objectReference: {fileID: 469628109}
-    - target: {fileID: 1341176107584522, guid: 7e00fd57cbf195b4db7ce102a7afbb30, type: 2}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 1341176107584522, guid: 7e00fd57cbf195b4db7ce102a7afbb30, type: 2}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1615803112}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7e00fd57cbf195b4db7ce102a7afbb30, type: 2}
   m_IsPrefabParent: 0
@@ -2380,7 +2339,7 @@ Prefab:
         type: 2}
       propertyPath: pixelPerfectCamera
       value: 
-      objectReference: {fileID: 469628109}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 30480b9df3751004fab873ebe95acdbc, type: 2}
   m_IsPrefabParent: 0
@@ -2427,7 +2386,7 @@ Prefab:
         type: 2}
       propertyPath: pixelPerfectCamera
       value: 
-      objectReference: {fileID: 469628109}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3d2601227f1f1cd499c99716fa4e47ef, type: 2}
   m_IsPrefabParent: 0
@@ -2516,15 +2475,7 @@ Prefab:
         type: 2}
       propertyPath: pixelPerfectCamera
       value: 
-      objectReference: {fileID: 469628109}
-    - target: {fileID: 1341176107584522, guid: a57532b7fb412a64f84b3bc3ee86f59e, type: 2}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 1341176107584522, guid: a57532b7fb412a64f84b3bc3ee86f59e, type: 2}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1615803112}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a57532b7fb412a64f84b3bc3ee86f59e, type: 2}
   m_IsPrefabParent: 0
@@ -2681,7 +2632,7 @@ Prefab:
         type: 2}
       propertyPath: pixelPerfectCamera
       value: 
-      objectReference: {fileID: 469628109}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2a1d6fcde32fff74a8a4640b848211cd, type: 2}
   m_IsPrefabParent: 0
@@ -2728,7 +2679,7 @@ Prefab:
         type: 2}
       propertyPath: pixelPerfectCamera
       value: 
-      objectReference: {fileID: 469628109}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e0d5cee61de458948b3bebb97f4964ac, type: 2}
   m_IsPrefabParent: 0
@@ -2775,7 +2726,7 @@ Prefab:
         type: 2}
       propertyPath: pixelPerfectCamera
       value: 
-      objectReference: {fileID: 469628109}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 06c296b2de42a664c8a357c7a68a3411, type: 2}
   m_IsPrefabParent: 0
@@ -2822,7 +2773,7 @@ Prefab:
         type: 2}
       propertyPath: pixelPerfectCamera
       value: 
-      objectReference: {fileID: 469628109}
+      objectReference: {fileID: 0}
     - target: {fileID: 1341176107584522, guid: e8b5a4c0cd3d59345807533c38fe1a5a, type: 2}
       propertyPath: m_Name
       value: Axe 3 (1)
@@ -2873,15 +2824,7 @@ Prefab:
         type: 2}
       propertyPath: pixelPerfectCamera
       value: 
-      objectReference: {fileID: 469628109}
-    - target: {fileID: 1341176107584522, guid: 21a45fb06eba48b4bbcb9d3122a5fb37, type: 2}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 1341176107584522, guid: 21a45fb06eba48b4bbcb9d3122a5fb37, type: 2}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1615803112}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 21a45fb06eba48b4bbcb9d3122a5fb37, type: 2}
   m_IsPrefabParent: 0

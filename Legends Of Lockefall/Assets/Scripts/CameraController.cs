@@ -2,27 +2,36 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum CameraMode {  GameplayMode, CinemaMode };
+
 public class CameraController : MonoBehaviour {
     public GameObject followTarget;
     private Vector3 targetPos;
     private float moveSpeed;
     private Camera _camera;
+    public CameraMode cameraMode;
+    public float deadzoneWidth;
+    public float deadzoneHeight;
 
     // Use this for initialization
     void Start () {
-        _camera = this.GetComponent<Camera>();
+        _camera = GetComponent<Camera>();
         if(!_camera)
         {
             Debug.Log("No camera");
         }
 
-        
-
-        followTarget = PlayerManager.instance.player;
+        Debug.Log("player is being followed... maybe");
+        followTarget = GameManager.instance.playerManager.player;
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    private void OnEnable()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update () {
         if(_camera && followTarget)
         {
             Vector2 newPosition = new Vector2(followTarget.transform.position.x, followTarget.transform.position.y);

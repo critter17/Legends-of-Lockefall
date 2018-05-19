@@ -32,35 +32,38 @@ public class GameManager : MonoBehaviour {
     public PlayerManager playerManager;
     public TextBoxManager textBoxManager;
     public QuestManager questManager;
-
-    public List<Quest> quests;
+    //public FileInfo fileInfo;
+    public GameFileData gameData;
+    public GameObject[] characterObjects;
 
     private void Start()
     {
+        Debug.Log("GameManager Start");
 
+        //Debug.Log("GameManager currency: " + currency);
+        //Debug.Log("GameManager fileinfo: " + fileInfo);
     }
 
     private void Update()
     {
         if(SceneManager.GetActiveScene().name == "MainMenu")
         {
-            hud.SetActive(false);
-            playerManager.gameObject.SetActive(false);
+            //hud.SetActive(false);
+            //playerManager.gameObject.SetActive(false);
             textBoxManager.gameObject.SetActive(false);
             questManager.gameObject.SetActive(false);
         }
         else
         {
-            hud.SetActive(true);
-            playerManager.gameObject.SetActive(true);
+            //hud.SetActive(true);
+            //playerManager.gameObject.SetActive(true);
             textBoxManager.gameObject.SetActive(true);
             questManager.gameObject.SetActive(true);
         }
 
         if(Input.GetKeyDown(KeyCode.F5))
         {
-            Debug.Log("Saving");
-            //SaveGame();
+            SaveGame();
         }
 
         if(Input.GetKeyDown(KeyCode.F9))
@@ -74,16 +77,37 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    public static void SaveGame()
+    public void SetupGame(int currentIndex, GameObject selectedCharacter)
     {
-        SaveLoad.Save(instance.fileId, instance);
+        hud.SetActive(true);
+        InitPlayer(selectedCharacter);
+        gameData.playerIndex = currentIndex;
+        gameData.spriteIndex = currentIndex;
+        gameData.isNewGame = false;
+        SaveGame();
     }
 
-    public static void LoadGame()
+    public void SaveGame()
     {
-        GameFileData gameData = SaveLoad.Load(instance.fileId);
-        instance.currency = gameData.currency;
+        gameData.currency = currency;
+        SaveLoad.Save(fileId, gameData);
+    }
 
+    public void LoadGame()
+    {
+        instance.hud.SetActive(true);
+        GameFileData fileData = SaveLoad.Load(fileId);
+        currency = fileData.currency;
+        InitPlayer(characterObjects[fileData.playerIndex]);
         SceneManager.LoadScene("TestingSandbox");
+    }
+
+    public void InitPlayer(GameObject character)
+    {
+        playerManager.player = Instantiate(character);
+        playerManager.player.transform.SetParent(transform);
+        playerManager.player.SetActive(true);
+        playerManager.playerInventory.gameObject.SetActive(true);
+        playerManager.Setup();
     }
 }

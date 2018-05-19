@@ -2,19 +2,19 @@
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using UnityEngine;
-using System;
 
 public static class SaveLoad {
 
-    public static List<GameFileData> savedGames = new List<GameFileData>(3);
+    public static GameFileData[] savedGames = new GameFileData[3];
     public static List<string> gameFileNames = new List<string>() { "gameFile1.dat", "gameFile2.dat", "gameFile3.dat" };
 
-    public static void Save(int gameToSave, GameManager gameManager)
+    public static void Save(int gameToSave, GameFileData gameData)
     {
         BinaryFormatter bf = new BinaryFormatter();
         FileStream file = File.Create(Path.Combine(Application.persistentDataPath, gameFileNames[gameToSave]));
         Debug.Log("Game to save: " + gameToSave);
-        savedGames.Insert(gameToSave, new GameFileData(gameManager));
+        Debug.Log(Path.Combine(Application.persistentDataPath, gameFileNames[gameToSave]));
+        savedGames[gameToSave] = gameData;
 
         bf.Serialize(file, savedGames[gameToSave]);
         file.Close();
@@ -22,26 +22,27 @@ public static class SaveLoad {
 
     public static GameFileData Load(int gameToLoad)
     {
-        GameFileData data;
-        if(File.Exists(Application.persistentDataPath + gameFileNames[gameToLoad]))
+        if(File.Exists(Path.Combine(Application.persistentDataPath, gameFileNames[gameToLoad])))
         {
+            Debug.Log("gameToLoad: " + gameToLoad);
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Open(Path.Combine(Application.persistentDataPath, gameFileNames[gameToLoad]), FileMode.Open);
-            data = (GameFileData) bf.Deserialize(file);
+            savedGames[gameToLoad] = (GameFileData) bf.Deserialize(file);
             file.Close();
-            return data;
+            return savedGames[gameToLoad];
         }
+        Debug.Log("File does not exist");
         return null;
     }
-}
 
-[Serializable]
-public class GameFileData
-{
-    public int currency;
-
-    public GameFileData(GameManager gameManager)
+    public static void Erase(int fileToErase)
     {
-        currency = gameManager.currency;
+        if(File.Exists(Path.Combine(Application.persistentDataPath, gameFileNames[fileToErase])))
+        {
+            savedGames[fileToErase] = null;
+            File.Delete(Path.Combine(Application.persistentDataPath, gameFileNames[fileToErase]));
+            UnityEditor.AssetDatabase.Refresh();
+            Debug.Log("Erased Data");
+        }
     }
 }

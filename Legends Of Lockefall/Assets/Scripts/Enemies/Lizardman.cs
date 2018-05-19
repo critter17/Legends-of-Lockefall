@@ -12,7 +12,7 @@ public class Lizardman : PatrolEnemyController {
     public override void ChaseAndAttack()
     {
         base.ChaseAndAttack();
-        float distance = Vector2.Distance(transform.position, PlayerManager.instance.player.transform.position);
+        float distance = Vector2.Distance(transform.position, GameManager.instance.playerManager.player.transform.position);
         if (distance <= attackRadius)
         {
             if(!attacking && canAttack)
@@ -22,8 +22,8 @@ public class Lizardman : PatrolEnemyController {
         {
             if (!attacking)
             {
-                transform.position = Vector2.MoveTowards(transform.position, PlayerManager.instance.player.transform.position, moveSpeed * Time.deltaTime);
-                DetectDirection(PlayerManager.instance.player.transform);
+                transform.position = Vector2.MoveTowards(transform.position, GameManager.instance.playerManager.player.transform.position, moveSpeed * Time.deltaTime);
+                DetectDirection(GameManager.instance.playerManager.player.transform);
             }
         }
 

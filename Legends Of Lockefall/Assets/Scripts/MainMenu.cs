@@ -7,13 +7,13 @@ using System;
 public class MainMenu : MonoBehaviour {
     public GameObject characterStatsPanel;
     public GameObject titlePanel;
-    public GameObject fileSelectPanel;
+    public FileSelect fileSelect;
 
     private void Awake()
     {
-        characterStatsPanel.SetActive(false);
         titlePanel.SetActive(true);
-        fileSelectPanel.SetActive(false);
+        characterStatsPanel.SetActive(false);
+        fileSelect.gameObject.SetActive(false);
     }
 
     private void Update()
@@ -22,7 +22,7 @@ public class MainMenu : MonoBehaviour {
         {
             if(titlePanel.activeSelf)
             {
-                fileSelectPanel.SetActive(true);
+                fileSelect.gameObject.SetActive(true);
                 titlePanel.SetActive(false);
             }      
         }
@@ -31,14 +31,15 @@ public class MainMenu : MonoBehaviour {
     public void OnNewFileButton(int gameToSave)
     {
         GameManager.instance.fileId = gameToSave;
-        GameManager.SaveGame();
+        GameManager.instance.gameData = fileSelect.fileSlots[gameToSave].gameData;
         characterStatsPanel.SetActive(true);
-        fileSelectPanel.SetActive(false);
+        fileSelect.gameObject.SetActive(false);
     }
 
     public void OnStartGameButton(int gameToLoad)
     {
         GameManager.instance.fileId = gameToLoad;
-        GameManager.LoadGame();
+        GameManager.instance.gameData = fileSelect.fileSlots[gameToLoad].gameData;
+        GameManager.instance.LoadGame();
     }
 }

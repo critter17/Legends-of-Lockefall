@@ -65,8 +65,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartPrefab: {fileID: 1632268289843640, guid: 00fd92a0f01bebc4a996013a97c37a72,
     type: 2}
-  fullHeart: {fileID: 21300000, guid: e8838ee3a4eed884b95e29d22d75f125, type: 3}
-  emptyHeart: {fileID: 21300002, guid: e8838ee3a4eed884b95e29d22d75f125, type: 3}
+  fullHeart: {fileID: 21300678, guid: 55f70b392d1cfab4389814be4d9dbbaf, type: 3}
+  emptyHeart: {fileID: 21300680, guid: 55f70b392d1cfab4389814be4d9dbbaf, type: 3}
 --- !u!222 &222689878968866290
 CanvasRenderer:
   m_ObjectHideFlags: 1

@@ -9,6 +9,11 @@ public class HeartsUI : MonoBehaviour {
     public GameObject heartPrefab;
     public Sprite fullHeart, emptyHeart;
 
+    private void Start()
+    {
+        Debug.Log("Now Active");
+    }
+
     public void UpdateHearts(int currentHealth)
     {
         hearts = GetComponentsInChildren<Image>();

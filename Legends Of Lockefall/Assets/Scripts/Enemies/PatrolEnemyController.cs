@@ -27,7 +27,7 @@ public class PatrolEnemyController : MonoBehaviour {
 	
 	void Update ()
     {
-        float distance = Vector2.Distance(transform.position, PlayerManager.instance.player.transform.position);
+        float distance = Vector2.Distance(transform.position, GameManager.instance.playerManager.player.transform.position);
         if(distance <= radius)
         {
             ChaseAndAttack();

@@ -6,6 +6,7 @@ public class CharacterSelector : MonoBehaviour {
 
     [SerializeField] private GameObject[] characters;
     public PlayerStats[] characterStats;
+    public FileSlot[] fileSlots;
     private int currentIndex = 0;
 
     public Text characterName;
@@ -43,9 +44,8 @@ public class CharacterSelector : MonoBehaviour {
     public void OnStartGameButton()
     {
         GameObject selectedCharacter = characters[currentIndex];
-        Debug.Log(selectedCharacter.name);
-        PlayerPrefs.SetInt("CharacterSelected", currentIndex);
+        GameManager.instance.SetupGame(currentIndex, selectedCharacter);
+        Debug.Log("Loading next scene");
         SceneManager.LoadScene("TestingSandbox");
-
     }
 }

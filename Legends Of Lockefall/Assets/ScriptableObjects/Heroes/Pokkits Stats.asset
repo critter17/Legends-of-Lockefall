@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Pokkits Stats
   m_EditorClassIdentifier: 
   name: Pokkits Galespy
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: fd83787337133cd48a9801db8f06b401, type: 3}
   maxHealth: 3
   currentHealth: 3
   baseStrength: 3
