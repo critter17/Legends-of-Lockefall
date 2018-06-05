@@ -1,26 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
+using UnityEngine;
 
 public class EdibleInventory : InventoryBase {
-
+    public GameObject edibleSlotPrefab;
     public EdibleSlot[] edibleSlots;
-
-	// Use this for initialization
-	void Start ()
-    {
-        
-    }
 
     private void OnEnable()
     {
-        if(SceneManager.GetActiveScene().name != "MainMenu")
+        edibleSlots = new EdibleSlot[maxQuantity];
+
+        for(int i = 0; i < maxQuantity; i++)
         {
-            edibleSlots = slotsParent.GetComponentsInChildren<EdibleSlot>();
-            for(int i = 0; i < edibleSlots.Length; i++)
-            {
-                edibleSlots[i].ClearSlot();
-            }
+            GameObject itemSlot = Instantiate(edibleSlotPrefab);
+            itemSlot.name = "Edible Slot";
+            itemSlot.transform.SetParent(slotsParent);
+            itemSlot.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+            itemSlot.SetActive(true);
+            edibleSlots[i] = itemSlot.GetComponent<EdibleSlot>();
+            edibleSlots[i].ClearSlot();
         }
     }
 

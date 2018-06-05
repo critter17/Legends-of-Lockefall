@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 public class PlayerInventory : MonoBehaviour {
     #region Singleton
@@ -29,10 +30,6 @@ public class PlayerInventory : MonoBehaviour {
 
     private void Start()
     {
-        if(SceneManager.GetActiveScene().name == "MainMenu")
-        {
-            gameObject.SetActive(false);
-        }
 
     }
 

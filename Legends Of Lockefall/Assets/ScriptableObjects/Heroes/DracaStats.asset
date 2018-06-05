@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Name: DracaStats
   m_EditorClassIdentifier: 
   name: Draca Brimstone
-  sprite: {fileID: 21300000, guid: 8bb8bd09670beb7438f9bbb79481e530, type: 3}
-  maxHealth: 6
-  currentHealth: 6
+  maxHealth: 24
+  currentHealth: 24
   baseStrength: 5
   baseDefense: 5
   baseSpeed: 3

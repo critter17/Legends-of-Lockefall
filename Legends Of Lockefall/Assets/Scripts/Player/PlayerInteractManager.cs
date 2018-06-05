@@ -12,7 +12,8 @@ public class PlayerInteractManager : MonoBehaviour {
         {
             if(focus.Count > 0)
             {
-                focus[focus.Count - 1].Interact(this.gameObject);
+                Debug.Log("Interacting...");
+                focus[focus.Count - 1].Interact(gameObject);
             }
         }
 	}

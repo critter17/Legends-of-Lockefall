@@ -494,12 +494,12 @@ Prefab:
     - target: {fileID: 20786389001351124, guid: efe66589a5c1d0c4786dce3939b2b3a9,
         type: 2}
       propertyPath: field of view
-      value: 176.2626
+      value: 176.81773
       objectReference: {fileID: 0}
     - target: {fileID: 20786389001351124, guid: efe66589a5c1d0c4786dce3939b2b3a9,
         type: 2}
       propertyPath: orthographic size
-      value: 306.5
+      value: 360
       objectReference: {fileID: 0}
     - target: {fileID: 114318616719983936, guid: efe66589a5c1d0c4786dce3939b2b3a9,
         type: 2}
@@ -674,7 +674,7 @@ MonoBehaviour:
   - Hey bro can you do me a solid?
   - Kill some Lizardmen for me. 2 should do the trick.
   - There should be some just north of us.
-  questGameObject: {fileID: 523301444}
+  questGameObject: {fileID: 0}
   questType: LizardmanSlayer
   waitingDialogue:
   - Have you done what I asked?

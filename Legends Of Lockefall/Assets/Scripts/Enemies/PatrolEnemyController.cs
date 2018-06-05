@@ -14,12 +14,14 @@ public class PatrolEnemyController : MonoBehaviour {
     public float moveSpeed;
     public bool moving;
     float delay;
+    public GameObject thePlayer;
 
     [HideInInspector]
     public float horizontal, vertical;
     
 	void Start ()
     {
+        thePlayer = GameManager.instance.playerManager.player;
         anim = GetComponent<Animator>();
         transform.position = waypoints[currentWaypoint].transform.position;
         delay = waypoints[currentWaypoint].waitTime;
@@ -27,8 +29,7 @@ public class PatrolEnemyController : MonoBehaviour {
 	
 	void Update ()
     {
-        float distance = Vector2.Distance(transform.position, GameManager.instance.playerManager.player.transform.position);
-        if(distance <= radius)
+        if(thePlayer != null && (Vector2.Distance(transform.position, thePlayer.transform.position) <= radius))
         {
             ChaseAndAttack();
         }

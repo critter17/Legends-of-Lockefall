@@ -32,35 +32,16 @@ public class GameManager : MonoBehaviour {
     public PlayerManager playerManager;
     public TextBoxManager textBoxManager;
     public QuestManager questManager;
-    //public FileInfo fileInfo;
     public GameFileData gameData;
     public GameObject[] characterObjects;
 
     private void Start()
     {
         Debug.Log("GameManager Start");
-
-        //Debug.Log("GameManager currency: " + currency);
-        //Debug.Log("GameManager fileinfo: " + fileInfo);
     }
 
     private void Update()
     {
-        if(SceneManager.GetActiveScene().name == "MainMenu")
-        {
-            //hud.SetActive(false);
-            //playerManager.gameObject.SetActive(false);
-            textBoxManager.gameObject.SetActive(false);
-            questManager.gameObject.SetActive(false);
-        }
-        else
-        {
-            //hud.SetActive(true);
-            //playerManager.gameObject.SetActive(true);
-            textBoxManager.gameObject.SetActive(true);
-            questManager.gameObject.SetActive(true);
-        }
-
         if(Input.GetKeyDown(KeyCode.F5))
         {
             SaveGame();
@@ -80,6 +61,8 @@ public class GameManager : MonoBehaviour {
     public void SetupGame(int currentIndex, GameObject selectedCharacter)
     {
         hud.SetActive(true);
+        textBoxManager.gameObject.SetActive(true);
+        questManager.gameObject.SetActive(true);
         InitPlayer(selectedCharacter);
         gameData.playerIndex = currentIndex;
         gameData.spriteIndex = currentIndex;
@@ -95,11 +78,13 @@ public class GameManager : MonoBehaviour {
 
     public void LoadGame()
     {
-        instance.hud.SetActive(true);
+        SceneManager.LoadScene("TestingSandbox");
+        hud.SetActive(true);
+        textBoxManager.gameObject.SetActive(true);
+        questManager.gameObject.SetActive(true);
         GameFileData fileData = SaveLoad.Load(fileId);
         currency = fileData.currency;
         InitPlayer(characterObjects[fileData.playerIndex]);
-        SceneManager.LoadScene("TestingSandbox");
     }
 
     public void InitPlayer(GameObject character)

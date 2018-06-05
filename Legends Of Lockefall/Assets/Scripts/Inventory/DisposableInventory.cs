@@ -1,25 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
+using UnityEngine;
 
 public class DisposableInventory : InventoryBase {
-
+    public GameObject disposableSlotPrefab;
     public DisposableSlot[] disposableSlots;
-
-    private void Start()
-    {
-        
-    }
 
     private void OnEnable()
     {
-        if(SceneManager.GetActiveScene().name != "MainMenu")
+        disposableSlots = new DisposableSlot[maxQuantity];
+        for(int i = 0; i < maxQuantity; i++)
         {
-            disposableSlots = slotsParent.GetComponentsInChildren<DisposableSlot>();
-            for(int i = 0; i < disposableSlots.Length; i++)
-            {
-                disposableSlots[i].ClearSlot();
-            }
+            GameObject itemSlot = Instantiate(disposableSlotPrefab);
+            itemSlot.name = "Disposable Slot";
+            itemSlot.transform.SetParent(slotsParent);
+            itemSlot.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+            itemSlot.SetActive(true);
+            disposableSlots[i] = itemSlot.GetComponent<DisposableSlot>();
+            disposableSlots[i].ClearSlot();
         }
     }
 

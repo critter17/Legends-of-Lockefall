@@ -990,7 +990,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1151967187140124
 GameObject:
   m_ObjectHideFlags: 1
@@ -8332,6 +8332,8 @@ MonoBehaviour:
   slotsParent: {fileID: 224408351830937168}
   currentSize: 0
   maxQuantity: 20
+  edibleSlotPrefab: {fileID: 1850272286268058, guid: af183ad093a16fa4d8008e4fa1970cc6,
+    type: 2}
   edibleSlots: []
 --- !u!114 &114187508983120178
 MonoBehaviour:
@@ -8695,6 +8697,8 @@ MonoBehaviour:
   slotsParent: {fileID: 224869559461394558}
   currentSize: 0
   maxQuantity: 20
+  artifactSlotPrefab: {fileID: 1972296464310746, guid: 9c66f1cd3f5f3e145bc17d01df96a695,
+    type: 2}
   artifactSlots: []
 --- !u!114 &114221053284772764
 MonoBehaviour:
@@ -10822,6 +10826,8 @@ MonoBehaviour:
   slotsParent: {fileID: 224816309429324342}
   currentSize: 0
   maxQuantity: 20
+  disposableSlotPrefab: {fileID: 1988641878139928, guid: 00ea9bf0b4afe094da7b57801d20b0eb,
+    type: 2}
   disposableSlots: []
 --- !u!114 &114371318834609444
 MonoBehaviour:
@@ -13959,6 +13965,8 @@ MonoBehaviour:
   slotsParent: {fileID: 224705956263036044}
   currentSize: 0
   maxQuantity: 20
+  armorSlotPrefab: {fileID: 1143454723432834, guid: 99fdc451f7afd7d479a123e4feb46538,
+    type: 2}
   armorSlots: []
 --- !u!114 &114575783162727414
 MonoBehaviour:
@@ -15460,6 +15468,8 @@ MonoBehaviour:
   slotsParent: {fileID: 224651689324775558}
   currentSize: 0
   maxQuantity: 20
+  weaponSlotPrefab: {fileID: 1850272286268058, guid: ccc855e8955324c4db9aa049d9350a5c,
+    type: 2}
   weaponSlots: []
 --- !u!114 &114697741179030250
 MonoBehaviour:
@@ -17283,6 +17293,8 @@ MonoBehaviour:
   playerManager:
     player: {fileID: 0}
     playerInventory: {fileID: 114808801735559930}
+    playerMovement: {fileID: 0}
+    playerCombat: {fileID: 0}
   textBoxManager: {fileID: 114261648597429578}
   questManager: {fileID: 114586887471670692}
   gameData:

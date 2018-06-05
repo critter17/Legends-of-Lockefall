@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Name: Eltrut Stats
   m_EditorClassIdentifier: 
   name: Frawd Eltrut
-  sprite: {fileID: 21300000, guid: fb215bbab0cddea4bbe6eb72d5664125, type: 3}
-  maxHealth: 5
-  currentHealth: 5
+  maxHealth: 20
+  currentHealth: 20
   baseStrength: 6
   baseDefense: 3
   baseSpeed: 2

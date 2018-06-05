@@ -5,11 +5,22 @@ using UnityEngine.SceneManagement;
 
 [Serializable]
 public class PlayerManager {
+    public static PlayerManager instance;
+
+    private void Awake()
+    {
+        if(instance == null)
+        {
+            instance = this;
+        }
+    }
+
     public GameObject player;
     public PlayerInventory playerInventory;
 
     [HideInInspector] public PlayerController playerMovement;
     [HideInInspector] public PlayerCombat playerCombat;
+    public PlayerStats playerStats;
 
     public delegate void OnEnemyKilled(string EnemyName); // I'm just putting it here because I can.
     public OnEnemyKilled OnEnemyKilledCallback;
@@ -24,5 +35,6 @@ public class PlayerManager {
         OnEnemyKilledCallback += Filler;
         playerMovement = player.GetComponent<PlayerController>();
         playerCombat = player.GetComponent<PlayerCombat>();
+        playerStats = player.GetComponent<HeroStatManager>().heroStats;
     }
 }

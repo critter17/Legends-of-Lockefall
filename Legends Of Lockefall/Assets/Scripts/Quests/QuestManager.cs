@@ -72,6 +72,7 @@ public class QuestManager : MonoBehaviour {
     public void UpdateAllQuests()
     {
         allQuests = GetComponents<Quest>();
+        Debug.Log("Quest length: " + allQuests.Length);
         if(allQuests.Length == 0)
         {
             questPanel.SetActive(false);

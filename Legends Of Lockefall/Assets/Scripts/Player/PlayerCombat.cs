@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerCombat : MonoBehaviour {
-    HeroStatManager hero;
+    PlayerStats hero;
     Animator anim;
     PlayerController playerController;
     WeaponController weaponController;
@@ -12,11 +12,11 @@ public class PlayerCombat : MonoBehaviour {
     
 	void Start ()
     {
-        hero = GetComponent<HeroStatManager>();
+        hero = GameManager.instance.playerManager.playerStats;
         anim = GetComponent<Animator>();
-        playerController = GetComponent<PlayerController>();
+        playerController = GameManager.instance.playerManager.playerMovement;
         weaponController = GetComponentInChildren<WeaponController>();
-        baseDamage = hero.heroStats.baseStrength;
+        baseDamage = hero.baseStrength;
 	}
 	
 	void Update ()

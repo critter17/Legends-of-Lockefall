@@ -1,26 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
+using UnityEngine;
 
 public class WeaponInventory : InventoryBase {
+    public GameObject weaponSlotPrefab;
     public WeaponSlot[] weaponSlots;
-
-    private void Start()
-    {
-        
-    }
 
     private void OnEnable()
     {
-        if(SceneManager.GetActiveScene().name != "MainMenu")
-        {
-            weaponSlots = slotsParent.GetComponentsInChildren<WeaponSlot>();
 
-            for(int i = 0; i < weaponSlots.Length; i++)
-            {
-                weaponSlots[i].ClearSlot();
-            }
+        weaponSlots = new WeaponSlot[maxQuantity];
+
+        for(int i = 0; i < maxQuantity; i++)
+        {
+            GameObject itemSlot = Instantiate(weaponSlotPrefab);
+            itemSlot.name = "Weapon Slot";
+            itemSlot.transform.SetParent(slotsParent);
+            itemSlot.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+            itemSlot.SetActive(true);
         }
+        weaponSlots = slotsParent.GetComponentsInChildren<WeaponSlot>();
     }
 
     private void OnDisable()

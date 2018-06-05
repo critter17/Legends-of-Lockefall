@@ -1,25 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
+using UnityEngine;
 
 public class ArmorInventory : InventoryBase {
-
+    public GameObject armorSlotPrefab;
     public ArmorSlot[] armorSlots;
-
-    private void Start()
-    {
-        
-    }
 
     private void OnEnable()
     {
-        if(SceneManager.GetActiveScene().name != "MainMenu")
+        armorSlots = new ArmorSlot[maxQuantity];
+
+        for(int i = 0; i < maxQuantity; i++)
         {
-            armorSlots = slotsParent.GetComponentsInChildren<ArmorSlot>();
-            for(int i = 0; i < armorSlots.Length; i++)
-            {
-                armorSlots[i].ClearSlot();
-            }
+            GameObject itemSlot = Instantiate(armorSlotPrefab);
+            itemSlot.name = "Armor Slot";
+            itemSlot.transform.SetParent(slotsParent);
+            itemSlot.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+            itemSlot.SetActive(true);
+            armorSlots[i] = itemSlot.GetComponent<ArmorSlot>();
+            armorSlots[i].ClearSlot();
         }
     }
 

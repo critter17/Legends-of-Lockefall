@@ -20,7 +20,6 @@ public class HurtPlayer : MonoBehaviour {
     {
         if(collision.gameObject.tag == "Player")
         {
-            Debug.Log("hello");
             playerHealth.TakeDamage(GetComponentInParent<EnemyHealthManager>().enemyStats.baseStrength);
         }
     }

@@ -1,26 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class ArtifactInventory : InventoryBase {
-
+    public GameObject artifactSlotPrefab;
     public ArtifactSlot[] artifactSlots;
-
-    private void Start()
-    {
-        
-    }
 
     private void OnEnable()
     {
-        if(SceneManager.GetActiveScene().name != "MainMenu")
+        artifactSlots = new ArtifactSlot[maxQuantity];
+
+        for(int i = 0; i < maxQuantity; i++)
         {
-            artifactSlots = slotsParent.GetComponentsInChildren<ArtifactSlot>();
-            for(int i = 0; i < artifactSlots.Length; i++)
-            {
-                artifactSlots[i].ClearSlot();
-            }
+            GameObject itemSlot = Instantiate(artifactSlotPrefab);
+            itemSlot.name = "Artifact Slot";
+            itemSlot.transform.SetParent(slotsParent);
+            itemSlot.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+            itemSlot.SetActive(true);
+            artifactSlots[i] = itemSlot.GetComponent<ArtifactSlot>();
+            artifactSlots[i].ClearSlot();
         }
     }
 

@@ -1,43 +1,38 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerHealthManager : MonoBehaviour {
-    HeroStatManager hero;
-
-    public HeartsUI heartsParent;
+    public IHealth health;
+    public HeartMeter heartsParent;
 
     // Use this for initialization
     void Start () {
-        heartsParent = FindObjectOfType<HeartsUI>();
-        hero = GetComponent<HeroStatManager>();
-        hero.heroStats.currentHealth = hero.heroStats.maxHealth;
- 
-        for(int i = 0; i < hero.heroStats.maxHealth; i++)
+        heartsParent = FindObjectOfType<HeartMeter>();
+        health = new HeartHealth(heartsParent, gameObject);
+        heartsParent.Subscribe();
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.T))
         {
-            Debug.Log("Trying to create hearts");
-            heartsParent.CreateHeart();
+            TakeDamage(1);
         }
 
-        heartsParent.UpdateHearts(hero.heroStats.currentHealth);
-    }
-	
-	// Update is called once per frame
-	void Update () {
-        hero.heroStats.currentHealth = Mathf.Clamp(hero.heroStats.currentHealth, 0, hero.heroStats.maxHealth);
-        hero.heroStats.maxHealth = Mathf.Clamp(hero.heroStats.maxHealth, 3, 20);
+        if(Input.GetKeyDown(KeyCode.Y))
+        {
+            Heal(1);
+        }
     }
 
     public void TakeDamage(int damage)
     {
-        hero.heroStats.currentHealth -= damage;
-        
+        health.TakeDamage(damage);
     }
 
     public void Heal(int amountToHeal)
     {
-        hero.heroStats.currentHealth += amountToHeal;
-        
+        health.Heal(amountToHeal);
     }
 }

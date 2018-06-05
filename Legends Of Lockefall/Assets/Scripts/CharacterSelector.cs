@@ -44,8 +44,8 @@ public class CharacterSelector : MonoBehaviour {
     public void OnStartGameButton()
     {
         GameObject selectedCharacter = characters[currentIndex];
-        GameManager.instance.SetupGame(currentIndex, selectedCharacter);
         Debug.Log("Loading next scene");
         SceneManager.LoadScene("TestingSandbox");
+        GameManager.instance.SetupGame(currentIndex, selectedCharacter);
     }
 }

@@ -18,14 +18,23 @@ public class QuestGiver : NPCInteraction {
 
     public override void Interact(GameObject player)
     {
+        questGameObject = FindObjectOfType<QuestManager>().gameObject;
         if(!AssignedQuest && !Helped)
         {
             base.Interact(player);
             AssignQuest();
-        }else if(AssignedQuest && !Helped)
+        }
+        else if(AssignedQuest && !Helped)
         {
-            TextBoxManager.instance.AddNewDialogue(waitingDialogue, NPCName);
-            CheckQuest();
+            if(TextBoxManager.instance.dialoguePanel.GetComponent<Animator>().GetBool("Opened"))
+            {
+                TextBoxManager.instance.ContinueDialogue();
+            }
+            else
+            {
+                TextBoxManager.instance.AddNewDialogue(waitingDialogue, NPCName);
+                CheckQuest();
+            }
         }
         else if(AssignedQuest && Helped)
         {
