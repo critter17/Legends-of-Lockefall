@@ -35,4 +35,9 @@ public class PlayerHealthManager : MonoBehaviour {
     {
         health.Heal(amountToHeal);
     }
+
+    private void OnDestroy()
+    {
+        heartsParent.Unsubscribe();
+    }
 }

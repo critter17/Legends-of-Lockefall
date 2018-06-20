@@ -1,8 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using System;
 
 public class PlayerInventory : MonoBehaviour {
     #region Singleton
@@ -28,9 +26,16 @@ public class PlayerInventory : MonoBehaviour {
     public ArtifactInventory artifactInventory;
     public EdibleInventory edibleInventory;
 
-    private void Start()
-    {
+    private PlayerController playerMovement;
 
+    private void OnEnable()
+    {
+        playerMovement = GameManager.instance.playerManager.playerMovement;
+    }
+
+    private void OnDisable()
+    {
+        playerMovement = null;
     }
 
     private void Update()

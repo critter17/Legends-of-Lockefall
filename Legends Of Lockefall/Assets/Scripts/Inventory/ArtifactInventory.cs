@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class ArtifactInventory : InventoryBase {
     public GameObject artifactSlotPrefab;
@@ -20,6 +21,16 @@ public class ArtifactInventory : InventoryBase {
             artifactSlots[i] = itemSlot.GetComponent<ArtifactSlot>();
             artifactSlots[i].ClearSlot();
         }
+    }
+
+    private void OnDisable()
+    {
+        for(int i = 0; i < maxQuantity; i++)
+        {
+            Destroy(artifactSlots[i].gameObject);
+        }
+        artifactSlots = null;
+        currentSize = 0;
     }
 
     public void AddArtifact(Artifact newArtifact)

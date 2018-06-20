@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class EdibleInventory : InventoryBase {
     public GameObject edibleSlotPrefab;
@@ -20,6 +21,16 @@ public class EdibleInventory : InventoryBase {
             edibleSlots[i] = itemSlot.GetComponent<EdibleSlot>();
             edibleSlots[i].ClearSlot();
         }
+    }
+
+    private void OnDisable()
+    {
+        for(int i = 0; i < maxQuantity; i++)
+        {
+            Destroy(edibleSlots[i].gameObject);
+        }
+        edibleSlots = null;
+        currentSize = 0;
     }
 
     public void AddEdible(Edible newEdible)

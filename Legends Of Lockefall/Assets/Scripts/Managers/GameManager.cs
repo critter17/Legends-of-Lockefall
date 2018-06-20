@@ -91,8 +91,8 @@ public class GameManager : MonoBehaviour {
     {
         playerManager.player = Instantiate(character);
         playerManager.player.transform.SetParent(transform);
+        playerManager.Setup();
         playerManager.player.SetActive(true);
         playerManager.playerInventory.gameObject.SetActive(true);
-        playerManager.Setup();
     }
 }

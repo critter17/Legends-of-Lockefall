@@ -14,9 +14,10 @@ public class HeartMeter : MonoBehaviour {
         player = GameManager.instance.playerManager.player;
     }
 
-    private void Update()
+    private void OnEnable()
     {
-
+        Debug.Log("Enable player?");
+        player = GameManager.instance.playerManager.player;
     }
 
     public void ResetHealth()
@@ -88,8 +89,16 @@ public class HeartMeter : MonoBehaviour {
         }
     }
 
+    public void Unsubscribe()
+    {
+        Debug.Log("Hoere");
+        player.GetComponent<PlayerHealthManager>().health.OnHPChanged -= UpdateHearts;
+        player = null;
+    }
+
     public void Subscribe()
     {
+        player = GameManager.instance.playerManager.player;
         player.GetComponent<PlayerHealthManager>().health.OnHPChanged += UpdateHearts;
     }
 }

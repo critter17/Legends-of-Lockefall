@@ -29,7 +29,11 @@ public abstract class ItemSlot : MonoBehaviour {
 
     public virtual void ClearSlot()
     {
+        item = null;
         icon.sprite = null;
         icon.enabled = false;
+        quantityText.text = "0";
+        quantityText.enabled = false;
+        quantity = 0;
     }
 }

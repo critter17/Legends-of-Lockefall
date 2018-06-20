@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class ArmorInventory : InventoryBase {
     public GameObject armorSlotPrefab;
@@ -20,6 +21,16 @@ public class ArmorInventory : InventoryBase {
             armorSlots[i] = itemSlot.GetComponent<ArmorSlot>();
             armorSlots[i].ClearSlot();
         }
+    }
+
+    private void OnDisable()
+    {
+        for(int i = 0; i < maxQuantity; i++)
+        {
+            Destroy(armorSlots[i].gameObject);
+        }
+        armorSlots = null;
+        currentSize = 0;
     }
 
     public void AddArmor(Armor newArmor)

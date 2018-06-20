@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class WeaponInventory : InventoryBase {
     public GameObject weaponSlotPrefab;
@@ -8,7 +9,6 @@ public class WeaponInventory : InventoryBase {
 
     private void OnEnable()
     {
-
         weaponSlots = new WeaponSlot[maxQuantity];
 
         for(int i = 0; i < maxQuantity; i++)
@@ -18,13 +18,19 @@ public class WeaponInventory : InventoryBase {
             itemSlot.transform.SetParent(slotsParent);
             itemSlot.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
             itemSlot.SetActive(true);
+            weaponSlots[i] = itemSlot.GetComponent<WeaponSlot>();
+            weaponSlots[i].ClearSlot();
         }
-        weaponSlots = slotsParent.GetComponentsInChildren<WeaponSlot>();
     }
 
     private void OnDisable()
     {
-        
+        for(int i = 0; i < maxQuantity; i++)
+        {
+            Destroy(weaponSlots[i].gameObject);
+        }
+        weaponSlots = null;
+        currentSize = 0;
     }
 
     public void AddWeapon(Weapon newWeapon)

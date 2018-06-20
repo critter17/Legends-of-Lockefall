@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class DisposableInventory : InventoryBase {
     public GameObject disposableSlotPrefab;
@@ -19,6 +20,16 @@ public class DisposableInventory : InventoryBase {
             disposableSlots[i] = itemSlot.GetComponent<DisposableSlot>();
             disposableSlots[i].ClearSlot();
         }
+    }
+
+    private void OnDisable()
+    {
+        for(int i = 0; i < maxQuantity; i++)
+        {
+            Destroy(disposableSlots[i].gameObject);
+        }
+        disposableSlots = null;
+        currentSize = 0;
     }
 
     public void AddDisposable(Disposable newDisposable)
