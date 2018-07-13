@@ -18,6 +18,7 @@ public class DisposableInventory : InventoryBase {
             itemSlot.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
             itemSlot.SetActive(true);
             disposableSlots[i] = itemSlot.GetComponent<DisposableSlot>();
+            disposableSlots[i].SetSlotNum(i);
             disposableSlots[i].ClearSlot();
         }
     }

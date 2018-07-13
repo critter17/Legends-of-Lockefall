@@ -1,12 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class PauseMenu : MonoBehaviour {
 
     private PlayerController playerMovement;
     public GameObject buttonList;
+    public Button resumeButton;
+    public Button settingsButton;
+    public Button mainMenuButton;
 
     private void Start()
     {
@@ -21,11 +26,13 @@ public class PauseMenu : MonoBehaviour {
             {
                 buttonList.SetActive(true);
                 playerMovement.CanMove(false);
+                EventSystem.current.SetSelectedGameObject(resumeButton.gameObject);
             }
             else
             {
                 buttonList.SetActive(false);
                 playerMovement.CanMove(true);
+                EventSystem.current.SetSelectedGameObject(null);
             }
         }
     }
@@ -34,6 +41,7 @@ public class PauseMenu : MonoBehaviour {
     {
         playerMovement.CanMove(true);
         buttonList.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(null);
     }
 
     public void Settings()

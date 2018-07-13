@@ -19,6 +19,7 @@ public class ArtifactInventory : InventoryBase {
             itemSlot.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
             itemSlot.SetActive(true);
             artifactSlots[i] = itemSlot.GetComponent<ArtifactSlot>();
+            artifactSlots[i].SetSlotNum(i);
             artifactSlots[i].ClearSlot();
         }
     }

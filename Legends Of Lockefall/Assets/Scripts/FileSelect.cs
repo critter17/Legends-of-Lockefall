@@ -26,7 +26,12 @@ public class FileSelect : MonoBehaviour {
         }
     }
 
-	public void OnCopyFile()
+    private void Update()
+    {
+        
+    }
+
+    public void OnCopyFile()
     {
 
     }

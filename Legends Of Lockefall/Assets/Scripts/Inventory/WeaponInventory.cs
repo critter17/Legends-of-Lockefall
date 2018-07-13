@@ -19,6 +19,7 @@ public class WeaponInventory : InventoryBase {
             itemSlot.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
             itemSlot.SetActive(true);
             weaponSlots[i] = itemSlot.GetComponent<WeaponSlot>();
+            weaponSlots[i].SetSlotNum(i);
             weaponSlots[i].ClearSlot();
         }
     }

@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour {
         speed = hero.heroStats.baseSpeed;
 	}
 
-    void FixedUpdate ()
+    private void Update ()
     {
         moving = false;
         float horizontal = Mathf.RoundToInt(Input.GetAxisRaw("Horizontal"));

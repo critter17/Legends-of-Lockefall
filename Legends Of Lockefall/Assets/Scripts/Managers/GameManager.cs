@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
+
+    #region Singleton
     public static GameManager instance;
 
     private void Awake()
@@ -19,11 +21,12 @@ public class GameManager : MonoBehaviour {
         }
 
         DontDestroyOnLoad(gameObject);
-
-        Debug.Log("GameManager Awake");
     }
+    #endregion
 
     public int fileId;
+
+    public IGameState gameState;
 
     public Text currencyText;
     public int currency = 0;
@@ -37,7 +40,7 @@ public class GameManager : MonoBehaviour {
 
     private void Start()
     {
-        Debug.Log("GameManager Start");
+        gameState = new GameState();
     }
 
     private void Update()

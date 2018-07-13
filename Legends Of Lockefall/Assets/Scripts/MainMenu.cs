@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using System;
 
 public class MainMenu : MonoBehaviour {
@@ -18,14 +18,26 @@ public class MainMenu : MonoBehaviour {
 
     private void Update()
     {
-        if(Input.anyKeyDown)
+        
+    }
+
+    public void OnPlaybutton()
+    {
+        if(titlePanel.activeSelf)
         {
-            if(titlePanel.activeSelf)
-            {
-                fileSelect.gameObject.SetActive(true);
-                titlePanel.SetActive(false);
-            }      
+            fileSelect.gameObject.SetActive(true);
+            titlePanel.SetActive(false);
+            EventSystem.current.SetSelectedGameObject(fileSelect.eraseButton.gameObject);
         }
+    }
+
+    public void OnQuitButton()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
 
     public void OnNewFileButton(int gameToSave)

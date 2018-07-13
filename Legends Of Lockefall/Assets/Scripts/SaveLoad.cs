@@ -41,7 +41,7 @@ public static class SaveLoad {
         {
             savedGames[fileToErase] = null;
             File.Delete(Path.Combine(Application.persistentDataPath, gameFileNames[fileToErase]));
-            UnityEditor.AssetDatabase.Refresh();
+            //UnityEditor.AssetDatabase.Refresh();
             Debug.Log("Erased Data");
         }
     }

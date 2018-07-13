@@ -19,6 +19,7 @@ public class EdibleInventory : InventoryBase {
             itemSlot.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
             itemSlot.SetActive(true);
             edibleSlots[i] = itemSlot.GetComponent<EdibleSlot>();
+            edibleSlots[i].SetSlotNum(i);
             edibleSlots[i].ClearSlot();
         }
     }

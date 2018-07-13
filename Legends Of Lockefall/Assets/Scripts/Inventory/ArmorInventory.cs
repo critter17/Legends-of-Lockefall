@@ -19,6 +19,7 @@ public class ArmorInventory : InventoryBase {
             itemSlot.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
             itemSlot.SetActive(true);
             armorSlots[i] = itemSlot.GetComponent<ArmorSlot>();
+            armorSlots[i].SetSlotNum(i);
             armorSlots[i].ClearSlot();
         }
     }
