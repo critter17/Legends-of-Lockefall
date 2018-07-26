@@ -16,7 +16,6 @@ public class HeartMeter : MonoBehaviour {
 
     private void OnEnable()
     {
-        Debug.Log("Enable player?");
         player = GameManager.instance.playerManager.player;
     }
 
@@ -91,7 +90,6 @@ public class HeartMeter : MonoBehaviour {
 
     public void Unsubscribe()
     {
-        Debug.Log("Hoere");
         player.GetComponent<PlayerHealthManager>().health.OnHPChanged -= UpdateHearts;
         player = null;
     }

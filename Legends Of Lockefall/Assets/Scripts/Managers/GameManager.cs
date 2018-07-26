@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour {
     public PlayerManager playerManager;
     public TextBoxManager textBoxManager;
     public QuestManager questManager;
+    public PauseMenu pauseMenu;
     public GameFileData gameData;
     public GameObject[] characterObjects;
 
@@ -67,6 +68,7 @@ public class GameManager : MonoBehaviour {
         textBoxManager.gameObject.SetActive(true);
         questManager.gameObject.SetActive(true);
         InitPlayer(selectedCharacter);
+        pauseMenu.gameObject.SetActive(true);
         gameData.playerIndex = currentIndex;
         gameData.spriteIndex = currentIndex;
         gameData.isNewGame = false;
@@ -88,6 +90,7 @@ public class GameManager : MonoBehaviour {
         GameFileData fileData = SaveLoad.Load(fileId);
         currency = fileData.currency;
         InitPlayer(characterObjects[fileData.playerIndex]);
+        pauseMenu.gameObject.SetActive(true);
     }
 
     public void InitPlayer(GameObject character)
@@ -97,5 +100,21 @@ public class GameManager : MonoBehaviour {
         playerManager.Setup();
         playerManager.player.SetActive(true);
         playerManager.playerInventory.gameObject.SetActive(true);
+    }
+
+    public void ReturnNoSave()
+    {
+        SceneManager.LoadScene("MainMenu");
+        currency = 0;
+        Time.timeScale = 1;
+        textBoxManager.gameObject.SetActive(false);
+        questManager.gameObject.SetActive(false);
+        pauseMenu.gameObject.SetActive(false);
+        hud.SetActive(false);
+        playerManager.player.GetComponent<PlayerHealthManager>().heartsParent.Unsubscribe();
+        Destroy(playerManager.player);
+        playerManager.player = null;
+        playerManager.playerStats = null;
+        playerManager.playerInventory.gameObject.SetActive(false);
     }
 }

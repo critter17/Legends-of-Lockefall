@@ -5,7 +5,8 @@ using UnityEngine;
 public enum WeaponType { Longsword, Shortsword, Dagger, Axe, Bow, Staff, Whip, Blaster, Mace, Hammer, BrassKnuckles };
 
 [CreateAssetMenu(menuName = "Items/Weapon")]
-public class Weapon : Item {
+public class Weapon : Item
+{
     public WeaponType weaponType;
     public int attackPower;
     public int elementPower;
@@ -20,6 +21,11 @@ public class Weapon : Item {
 
     public override void ItemInteract(GameObject player)
     {
-        PlayerInventory.instance.weaponInventory.AddWeapon(this);   
+        PlayerInventory.instance.weaponInventory.AddWeapon(this);
+    }
+
+    public void EquipWeapon()
+    {
+        GameManager.instance.playerManager.player.GetComponentInChildren<WeaponController>().Equip(this);
     }
 }

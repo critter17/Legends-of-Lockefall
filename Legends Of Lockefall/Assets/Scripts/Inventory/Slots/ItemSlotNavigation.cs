@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ItemSlotNavigation : MonoBehaviour {
+public class ItemSlotNavigation : MonoBehaviour
+{
 
     public ItemSlot itemSlot;
     public ItemSlotPanel itemSlotPanel;

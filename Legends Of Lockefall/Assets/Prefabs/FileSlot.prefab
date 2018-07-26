@@ -615,11 +615,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1405792733264374}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcdde58ec22b6fc46b7639f4865f5cd4, type: 3}
+  m_Script: {fileID: 11500000, guid: 80503f446b22da246bdbd4392b1d8abd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fileSelectPanel: {fileID: 0}
+  characterStatsPanel: {fileID: 0}
   gameData:
-    player: {fileID: 0}
+    playerIndex: 0
     spriteIndex: -1
     fileName: 
     isNewGame: 0
@@ -736,8 +738,8 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 600, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}

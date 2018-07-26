@@ -3,7 +3,8 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 
-public class WeaponSlot : ItemSlot {
+public class WeaponSlot : ItemSlot
+{
 
     public Weapon weapon;
 
@@ -12,31 +13,9 @@ public class WeaponSlot : ItemSlot {
         if(slotSelected && itemButton.enabled)
         {
             Debug.Log("fttthq");
-            //EventSystem.current.firstSelectedGameObject = itemButton.gameObject;
             EventSystem.current.SetSelectedGameObject(null);
             EventSystem.current.SetSelectedGameObject(itemButton.gameObject);
         }
-    }
-
-    private void OnEnable()
-    {
-        //Select();
-        //if(slotSelected && itemButton.enabled)
-        //{
-        //    Debug.Log("fttthq");
-        //    EventSystem.current.firstSelectedGameObject = itemButton.gameObject;
-        //}
-    }
-
-    private void OnDisable()
-    {
-        //if(EventSystem.current.currentSelectedGameObject != null)
-        //{
-        //    Debug.Log("Unselect");
-        //    EventSystem.current.SetSelectedGameObject(null);
-        //}
-        ////EventSystem.current.firstSelectedGameObject = null;
-        //slotSelected = false;
     }
 
     public void AddWeapon(Weapon newWeapon)
@@ -54,6 +33,6 @@ public class WeaponSlot : ItemSlot {
 
     public void EquipWeapon()
     {
-        weapon.InventoryItemAction();
+        weapon.EquipWeapon();
     }
 }

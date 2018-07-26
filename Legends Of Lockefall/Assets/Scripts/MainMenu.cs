@@ -23,12 +23,9 @@ public class MainMenu : MonoBehaviour {
 
     public void OnPlaybutton()
     {
-        if(titlePanel.activeSelf)
-        {
-            fileSelect.gameObject.SetActive(true);
-            titlePanel.SetActive(false);
-            EventSystem.current.SetSelectedGameObject(fileSelect.eraseButton.gameObject);
-        }
+        fileSelect.gameObject.SetActive(true);
+        titlePanel.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(fileSelect.eraseButton.gameObject);
     }
 
     public void OnQuitButton()

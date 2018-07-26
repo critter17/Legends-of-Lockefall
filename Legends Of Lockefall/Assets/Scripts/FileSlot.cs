@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class FileSlot : MonoBehaviour {
+    public GameObject fileSelectPanel;
+    public GameObject characterStatsPanel;
+
     public GameFileData gameData;
     public Button newGameButton;
     public Button startGameButton;
@@ -33,11 +36,13 @@ public class FileSlot : MonoBehaviour {
         if(gameData.isNewGame)
         {
             newGameButton.gameObject.SetActive(true);
+            startGameButton.gameObject.SetActive(false);
             characterSprite.enabled = false;
         }
         else
         {
             startGameButton.gameObject.SetActive(true);
+            newGameButton.gameObject.SetActive(false);
             characterSprite.enabled = true;
             Debug.Log("Sprite Index: " + gameData.spriteIndex);
             if(gameData.spriteIndex >= 0) characterSprite.sprite = characterSprites[gameData.spriteIndex];
@@ -66,5 +71,21 @@ public class FileSlot : MonoBehaviour {
         SaveLoad.Erase(fileToErase);
         EraseFileInfo();
         SetupFileSlot();
+        fileSelectPanel.GetComponent<FileSelect>().ToggleEraseButtons();
+    }
+
+    public void OnNewFileButton(int gameToSave)
+    {
+        GameManager.instance.fileId = gameToSave;
+        GameManager.instance.gameData = gameData;
+        characterStatsPanel.SetActive(true);
+        fileSelectPanel.SetActive(false);
+    }
+
+    public void OnStartGameButton(int gameToLoad)
+    {
+        GameManager.instance.fileId = gameToLoad;
+        GameManager.instance.gameData = gameData;
+        GameManager.instance.LoadGame();
     }
 }

@@ -38,6 +38,6 @@ public class PlayerHealthManager : MonoBehaviour {
 
     private void OnDestroy()
     {
-        heartsParent.Unsubscribe();
+        //heartsParent.Unsubscribe();
     }
 }

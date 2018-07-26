@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Item", menuName = "Items/Generic")]
-public abstract class Item : ScriptableObject {
+public abstract class Item : ScriptableObject
+{
+    public GameObject itemGameObject;
     public string itemName = "New Item";
     public string itemDescription = "This item does something";
     public Sprite itemSprite = null;

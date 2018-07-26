@@ -5,15 +5,11 @@ using UnityEngine.EventSystems;
 
 public class TitleMenu : MonoBehaviour {
     public Button playButton;
-    public Button quitButton;
     public Button settingsButton;
+    public Button quitButton;
 
-	// Use this for initialization
-	void Start () {
-        
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	}
+    // Use this for initialization
+    void Start () {
+        EventSystem.current.SetSelectedGameObject(playButton.gameObject);
+    }
 }
