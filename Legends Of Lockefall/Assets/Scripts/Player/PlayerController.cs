@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour {
 
     public bool moving;
     public Vector2 lastMove;
-    public bool canMove = true;
+    public bool CanMove { get; set; } = true;
     private int speed;
 
 	void Start ()
@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour {
         float horizontal = Mathf.RoundToInt(Input.GetAxisRaw("Horizontal"));
         float vertical = Mathf.RoundToInt(Input.GetAxisRaw("Vertical"));
 
-        if (canMove)
+        if (CanMove)
         {
             if(horizontal != 0 && vertical != 0)
             {
@@ -56,10 +56,5 @@ public class PlayerController : MonoBehaviour {
         anim.SetFloat("LastMoveHorizontal", lastMove.x);
         anim.SetBool("Moving", moving);
 
-    }
-
-    public void CanMove(bool state)
-    {
-        canMove = state;
     }
 }

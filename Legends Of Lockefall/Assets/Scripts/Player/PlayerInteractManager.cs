@@ -17,38 +17,20 @@ public class PlayerInteractManager : MonoBehaviour {
             }
         }
 	}
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    
+    public void SetFocus(Interactable newFocus)
     {
-        if(collision.gameObject.tag == "Interactable")
+        if(!focus.Contains(newFocus))
         {
-            Interactable interactable = collision.GetComponent<Interactable>();
-            if(!focus.Contains(interactable))
-            {
-                SetFocus(interactable);
-            }
+            focus.Add(newFocus);
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    public void LoseFocus(Interactable lostFocus)
     {
-        if(collision.gameObject.tag == "Interactable")
+        if(focus.Contains(lostFocus))
         {
-            Interactable interactable = collision.GetComponent<Interactable>();
-            if(focus.Contains(interactable))
-            {
-                LoseFocus(interactable);
-            }
+            focus.Remove(lostFocus);
         }
-    }
-
-    void SetFocus(Interactable newFocus)
-    {
-        focus.Add(newFocus);
-    }
-
-    void LoseFocus(Interactable lostFocus)
-    {
-        focus.Remove(lostFocus);
     }
 }

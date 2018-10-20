@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using System;
 
-public class MainMenu : MonoBehaviour {
+public class MainMenu : MenuSelectionHandler {
     public GameObject characterStatsPanel;
     public GameObject titlePanel;
     public FileSelect fileSelect;
@@ -14,11 +14,6 @@ public class MainMenu : MonoBehaviour {
         titlePanel.SetActive(true);
         characterStatsPanel.SetActive(false);
         fileSelect.gameObject.SetActive(false);
-    }
-
-    private void Update()
-    {
-        
     }
 
     public void OnPlaybutton()

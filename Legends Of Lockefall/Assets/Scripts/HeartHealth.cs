@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HeartHealth : IHealth {
-    public int maxHealth;
-    public int currentHealth;
+    private readonly int maxHealth;
+    private int currentHealth;
     public GameObject owner;
     public HeartMeter heartsParent;
 
@@ -40,10 +40,7 @@ public class HeartHealth : IHealth {
 
     protected virtual void HPChanged()
     {
-        if(OnHPChanged != null)
-        {
-            OnHPChanged(NumHearts, NumFullHearts, RemainderHearts);
-        }
+        OnHPChanged?.Invoke(NumHearts, NumFullHearts, RemainderHearts);
     }
 
     public void TakeDamage(int amount)
@@ -73,10 +70,7 @@ public class HeartHealth : IHealth {
 
     private void Die()
     {
-        if(OnDied != null)
-        {
-            OnDied();
-        }
+        OnDied?.Invoke();
         UnityEngine.Object.Destroy(owner);
     }
 }

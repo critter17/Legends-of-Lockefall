@@ -22,7 +22,7 @@ public class PlayerCombat : MonoBehaviour
 
     void Update()
     {
-        if(playerController.canMove == true)
+        if(playerController.CanMove == true)
         {
             if(Input.GetButtonDown("Fire1") && weaponController.currentEquippedItems[0] != null)
             {
@@ -37,9 +37,9 @@ public class PlayerCombat : MonoBehaviour
     IEnumerator Attack()
     {
         anim.SetBool("Attack", true);
-        playerController.CanMove(false);
+        playerController.CanMove = false;
         yield return new WaitForSeconds(attackSpeed);
         anim.SetBool("Attack", false);
-        playerController.CanMove(true);
+        playerController.CanMove = true;
     }
 }

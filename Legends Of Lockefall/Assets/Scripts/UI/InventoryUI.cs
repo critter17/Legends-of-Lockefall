@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryUI : MonoBehaviour {
+public class InventoryUI : MenuSelectionHandler {
     public ItemTabPanel[] itemTabPanels;
     [SerializeField] public int currentTabIndex = 0;
     [SerializeField] public int previousTabIndex = 0;

@@ -18,20 +18,29 @@ public class QuickSlotManager : MonoBehaviour {
 
     public Item[] items;
     public Image[] quickSlotImages;
-    public GameObject player;
+    public WeaponController weaponController;
 
     private void Start()
     {
-        Debug.Log("QSM");
+        weaponController = GameManager.instance.playerManager.weaponController;
+        items = weaponController.currentEquippedItems;
+    }
 
-        player = GameManager.instance.playerManager.player;
+    private void OnEnable()
+    {
+        weaponController = GameManager.instance.playerManager.weaponController;
+        //items = weaponController.currentEquippedItems;
+    }
 
-        items = player.GetComponentInChildren<WeaponController>().currentEquippedItems;
+    private void OnDisable()
+    {
+        weaponController = null;
+        items = null;
     }
 
     private void Update()
     {
-        items = player.GetComponentInChildren<WeaponController>().currentEquippedItems;
+        items = weaponController.currentEquippedItems;
 
         for(int i = 0; i < items.Length; i++)
         {

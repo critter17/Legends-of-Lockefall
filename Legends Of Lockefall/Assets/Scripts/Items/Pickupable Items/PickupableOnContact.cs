@@ -8,7 +8,6 @@ public abstract class PickupableOnContact : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject.name);
         if(collision.gameObject.tag == "Player")
         {
             Pickup(collision.gameObject);

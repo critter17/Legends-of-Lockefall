@@ -40,7 +40,7 @@ public class ItemSlotPanel : MonoBehaviour {
         Debug.Log(EventSystem.current.currentSelectedGameObject);
         if(EventSystem.current.currentSelectedGameObject != null)
         {
-            inventoryUI.lastSelectedSlotIndex = EventSystem.current.currentSelectedGameObject.GetComponent<ItemSlot>().slotNumber;
+            inventoryUI.lastSelectedSlotIndex = EventSystem.current.currentSelectedGameObject.GetComponent<ItemSlot>().SlotNumber;
             EventSystem.current.SetSelectedGameObject(null);
         }
 

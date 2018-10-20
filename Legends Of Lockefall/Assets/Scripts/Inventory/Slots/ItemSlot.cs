@@ -11,7 +11,9 @@ public abstract class ItemSlot : MonoBehaviour {
     public int quantity;
     public GameObject selectCursorPrefab;
     private GameObject selectCursor;
-    public int slotNumber;
+
+    public int SlotNumber { get; private set; }
+
     public bool slotSelected = false;
 
     public void UpdateQuantity()
@@ -45,7 +47,7 @@ public abstract class ItemSlot : MonoBehaviour {
 
     public void SetSlotNum(int num)
     {
-        slotNumber = num;
+        SlotNumber = num;
     }
 
     public void SelectSlot()
