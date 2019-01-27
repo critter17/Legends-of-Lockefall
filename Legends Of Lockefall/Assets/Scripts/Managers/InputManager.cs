@@ -21,20 +21,29 @@ public class InputManager : MonoBehaviour
     #endregion
 
     public event Action OnKeyboardInput = delegate { };
+    public event Action OnMouseInput = delegate { };
+    public event Action OnControllerInput = delegate { };
 
     private void Start()
     {
-        Cursor.visible = false;
+
     }
 
     private void Update()
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
+        float mouseX = Input.GetAxis("Mouse X");
+        float mouseY = Input.GetAxis("Mouse Y");
 
         if(horizontal != 0 || vertical != 0)
         {
             OnKeyboardInput?.Invoke();
+        }
+
+        if(mouseX != 0 || mouseY != 0)
+        {
+            OnMouseInput?.Invoke();
         }
 
         if(Input.GetButtonDown("Pause"))

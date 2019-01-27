@@ -29,7 +29,7 @@ public class QuickSlotManager : MonoBehaviour {
     private void OnEnable()
     {
         weaponController = GameManager.instance.playerManager.weaponController;
-        //items = weaponController.currentEquippedItems;
+        items = weaponController.currentEquippedItems;
     }
 
     private void OnDisable()

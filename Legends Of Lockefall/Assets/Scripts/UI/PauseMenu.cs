@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 
-public class PauseMenu : MonoBehaviour {
+public class PauseMenu : MenuSelectionHandler {
 
    //public PlayerController playerMovement;
     //public GameObject buttonList;

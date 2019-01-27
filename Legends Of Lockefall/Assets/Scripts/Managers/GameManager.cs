@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour {
     public PlayerManager playerManager;
     public TextBoxManager textBoxManager;
     public QuestManager questManager;
+    public QuickSlotManager quickSlotManager;
     public GameFileData gameData;
     public GameObject[] characterObjects;
 
@@ -88,11 +89,11 @@ public class GameManager : MonoBehaviour {
 
     public void SetupGame(int currentIndex, GameObject selectedCharacter)
     {
+        InitPlayer(selectedCharacter);
         hud.SetActive(true);
         textBoxManager.gameObject.SetActive(true);
         questManager.gameObject.SetActive(true);
-        InitPlayer(selectedCharacter);
-        //pauseMenu.gameObject.SetActive(true);
+        quickSlotManager.gameObject.SetActive(true);
         gameData.playerIndex = currentIndex;
         gameData.spriteIndex = currentIndex;
         gameData.isNewGame = false;
@@ -114,7 +115,7 @@ public class GameManager : MonoBehaviour {
         hud.SetActive(true);
         textBoxManager.gameObject.SetActive(true);
         questManager.gameObject.SetActive(true);
-        //pauseMenu.gameObject.SetActive(true);
+        quickSlotManager.gameObject.SetActive(true);
     }
 
     public void InitPlayer(GameObject character)
@@ -133,7 +134,7 @@ public class GameManager : MonoBehaviour {
         currency = 0;
         textBoxManager.gameObject.SetActive(false);
         questManager.gameObject.SetActive(false);
-        //pauseMenu.gameObject.SetActive(false);
+        quickSlotManager.gameObject.SetActive(false);
         hud.SetActive(false);
         playerManager.player.GetComponent<PlayerHealthManager>().heartsParent.Unsubscribe();
         Destroy(playerManager.player);

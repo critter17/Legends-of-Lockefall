@@ -31,7 +31,7 @@ public class InventoryUI : MenuSelectionHandler {
         itemTabPanels[tabToChangeTo].transform.SetAsLastSibling();
         currentTabIndex = tabToChangeTo;
         itemTabPanels[previousTabIndex].itemSlotPanel.SlotButtonToggle(false);
-        itemTabPanels[currentTabIndex].itemSlotPanel.ChangeSlotEnabled(true);
+        itemTabPanels[currentTabIndex].itemSlotPanel.SlotButtonToggle(true);
     }
 
     public void SwitchCurrentTabPanel()
