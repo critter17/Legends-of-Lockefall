@@ -2275,6 +2275,11 @@ PrefabInstance:
       propertyPath: m_Navigation.m_SelectOnDown
       value: 
       objectReference: {fileID: 1833607553}
+    - target: {fileID: 114837491251197386, guid: c56d330ca557d0a4a93576c444a9a861,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56d330ca557d0a4a93576c444a9a861, type: 3}
 --- !u!224 &665055399 stripped
@@ -6169,6 +6174,11 @@ PrefabInstance:
       propertyPath: m_Navigation.m_SelectOnUp
       value: 
       objectReference: {fileID: 665055401}
+    - target: {fileID: 114652268837367560, guid: 2cfc0287cb80c034a8743dc0b731aab7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cfc0287cb80c034a8743dc0b731aab7, type: 3}
 --- !u!114 &1833607551 stripped

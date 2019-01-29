@@ -31,12 +31,12 @@ public class CameraController : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
+    void LateUpdate () {
         if(_camera && followTarget)
         {
             Vector2 newPosition = new Vector2(followTarget.transform.position.x, followTarget.transform.position.y);
-            float nextX = Mathf.Round(PixelPerfect.pixelsPerUnit * newPosition.x);
-            float nextY = Mathf.Round(PixelPerfect.pixelsPerUnit * newPosition.y);
+            int nextX = Mathf.RoundToInt(PixelPerfect.pixelsPerUnit * newPosition.x);
+            int nextY = Mathf.RoundToInt(PixelPerfect.pixelsPerUnit * newPosition.y);
             _camera.transform.position = new Vector3(nextX / PixelPerfect.pixelsPerUnit, nextY / PixelPerfect.pixelsPerUnit, _camera.transform.position.z);
         }
     }
